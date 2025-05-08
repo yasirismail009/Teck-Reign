@@ -126,7 +126,7 @@ export default function CaseStudy({ params }) {
         {/* Testimonial */}
         <div className="mb-16 bg-blue-50 p-8 rounded-xl border border-blue-100">
           <blockquote className="text-xl italic text-gray-700 mb-6">
-            "{caseStudy.content.testimonial.quote}"
+            &ldquo;{caseStudy.content.testimonial.quote}&rdquo;
           </blockquote>
           <div className="flex items-center">
             <div>

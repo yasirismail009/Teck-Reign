@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const partnerLogos = [
   { name: 'SquareStone', src: '/vercel.svg' },
@@ -21,9 +22,11 @@ export default function ContactShowcase() {
       {/* Main CTA Card */}
       <div className="relative rounded-2xl overflow-hidden shadow-lg mb-16 flex items-stretch min-h-[260px]">
         {/* Background image */}
-        <img
+        <Image
           src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=800&q=80"
           alt="Contact background"
+          width={800}
+          height={400}
           className="absolute inset-0 w-full h-full object-cover object-center z-0"
         />
         {/* Overlay */}
@@ -31,7 +34,7 @@ export default function ContactShowcase() {
         {/* Content */}
         <div className="relative z-20 flex flex-col justify-center p-10 sm:p-16 w-full max-w-2xl">
           <h2 className="text-2xl sm:text-4xl md:text-5xl font-light text-gray-400 mb-2 leading-tight">
-            Let's Collaborate & Create <br />
+            Let&apos;s Collaborate & Create <br />
             <span className="font-bold text-gray-900">Something Amazing</span>
           </h2>
           <p className="text-gray-200 text-base sm:text-lg mb-6 max-w-xl">
@@ -60,7 +63,13 @@ export default function ContactShowcase() {
                 className="flex items-center transition-transform duration-300 opacity-80 grayscale hover:scale-110 hover:opacity-100 hover:grayscale-0 mx-2 drop-shadow-md"
                 style={{ minWidth: 90 }}
               >
-                <img src={logo.src} alt={logo.name} className="h-12 w-auto object-contain rounded-md bg-white p-1 shadow-sm" />
+                <Image 
+                  src={logo.src} 
+                  alt={logo.name} 
+                  width={90}
+                  height={48}
+                  className="h-12 w-auto object-contain rounded-md bg-white p-1 shadow-sm" 
+                />
               </div>
             ))}
           </div>

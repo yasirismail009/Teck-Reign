@@ -1,5 +1,6 @@
 'use client'
 import React, { useState } from 'react';
+import Image from 'next/image';
 
 const services = [
   {
@@ -42,7 +43,7 @@ export default function ContactUsPage() {
         {/* Left: Form Section */}
         <div className="flex-1 flex flex-col justify-center min-w-[370px] px-8 md:px-14 py-12">
           <div className="flex flex-col justify-center h-full">
-            <h1 className="text-3xl font-bold mb-2 leading-tight text-[#18181B]">Let's Work Together</h1>
+            <h1 className="text-3xl font-bold mb-2 leading-tight text-[#18181B]">Let&apos;s Work Together</h1>
             <p className="text-[#44444A] mb-7 text-base leading-relaxed font-normal">We deliver comprehensive solutions, particularly excelling in financial communications and strategic public relations.</p>
             <div className="mb-7">
               <div className="text-sm font-medium mb-3 text-[#18181B]">What do you need help with?</div>
@@ -118,9 +119,11 @@ export default function ContactUsPage() {
         </div>
         {/* Right: Image & Info Section */}
         <div className="flex-1 relative min-h-[600px] flex items-center justify-center">
-          <img
+          <Image
             src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=800&q=80"
             alt="Business handshake"
+            width={800}
+            height={600}
             className="absolute inset-0 w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent z-10" />

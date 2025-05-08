@@ -25,7 +25,7 @@ export default function CaseStudies() {
       <section className="relative py-28 bg-[var(--color-primary)] text-white">
         <div className="relative z-10 max-w-3xl mx-auto px-4 flex flex-col items-center text-center gap-8">
           <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight">Case Studies</h1>
-          <p className="text-lg md:text-xl font-light opacity-80">Discover how we've helped businesses transform and achieve remarkable results</p>
+          <p className="text-lg md:text-xl font-light opacity-80">Discover how we&apos;ve helped businesses transform and achieve remarkable results</p>
           <div className="flex flex-col md:flex-row gap-4 w-full justify-center">
             <input
               type="text"
@@ -77,7 +77,7 @@ export default function CaseStudies() {
       <section className="py-20 bg-white border-t border-[var(--color-surface)]">
         <div className="max-w-3xl mx-auto px-4 text-center flex flex-col items-center gap-6">
           <h2 className="text-3xl md:text-4xl font-extrabold text-gray-900 mb-2">Ready to Transform Your Business?</h2>
-          <p className="text-lg text-gray-500 mb-4">Let's discuss how we can help you achieve similar results for your business</p>
+          <p className="text-lg text-gray-500 mb-4">Let&apos;s discuss how we can help you achieve similar results for your business</p>
           <Link
             href="/contact-us"
             className="inline-block px-8 py-3 rounded-lg text-lg font-semibold bg-[var(--color-primary)] text-white hover:bg-[var(--color-primary-dark)] transition-colors shadow-sm"

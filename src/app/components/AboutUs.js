@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const features = [
   {
@@ -78,7 +79,13 @@ export default function AboutUs() {
                 className="flex items-center transition-transform duration-300 opacity-80 grayscale hover:scale-110 hover:opacity-100 hover:grayscale-0 mx-1 sm:mx-2 drop-shadow-md"
                 style={{ minWidth: '60px', maxWidth: '90px' }}
               >
-                <img src={logo.src} alt={logo.name} className="h-8 sm:h-12 w-auto object-contain rounded-md bg-white p-1 shadow-sm" />
+                <Image 
+                  src={logo.src} 
+                  alt={logo.name} 
+                  width={90}
+                  height={48}
+                  className="h-8 sm:h-12 w-auto object-contain rounded-md bg-white p-1 shadow-sm" 
+                />
               </div>
             ))}
           </div>

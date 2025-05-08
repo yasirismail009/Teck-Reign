@@ -1,11 +1,12 @@
 'use client'
 import React from 'react';
+import Link from 'next/link';
 
 export default function WorkTogetherPage() {
   return (
     <div className="flex flex-col items-center justify-center bg-[#F9F9FB] py-16">
       <div className="max-w-4xl mx-auto px-6">
-        <h1 className="text-4xl font-bold text-center mb-8">Let's Work Together</h1>
+        <h1 className="text-4xl font-bold text-center mb-8">Let&apos;s Work Together</h1>
         <div className="grid md:grid-cols-2 gap-8">
           <div className="bg-white p-8 rounded-2xl shadow-lg">
             <h2 className="text-2xl font-semibold mb-4">Our Approach</h2>
@@ -36,7 +37,7 @@ export default function WorkTogetherPage() {
           <div className="bg-white p-8 rounded-2xl shadow-lg">
             <h2 className="text-2xl font-semibold mb-4">Why Choose Us</h2>
             <p className="text-gray-600 mb-6">
-              With years of experience and a proven track record, we're committed to delivering excellence in every project.
+              With years of experience and a proven track record, we&apos;re committed to delivering excellence in every project.
             </p>
             <ul className="space-y-4">
               <li className="flex items-start">
@@ -61,12 +62,12 @@ export default function WorkTogetherPage() {
           </div>
         </div>
         <div className="text-center mt-12">
-          <a
+          <Link
             href="/contact-us"
             className="inline-block bg-[#8958FE] hover:bg-[#6C3DFE] text-white font-semibold rounded-lg px-8 py-3 transition-all text-base shadow"
           >
             Get Started
-          </a>
+          </Link>
         </div>
       </div>
     </div>

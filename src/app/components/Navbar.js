@@ -1,5 +1,6 @@
 'use client'
 import React, { useState, useRef, useEffect } from 'react';
+import Link from 'next/link';
 
 const servicesData = [
   {
@@ -82,16 +83,16 @@ export default function Navbar() {
     <nav className="relative z-10">
       {/* Desktop Navigation */}
       <div className="hidden md:flex gap-8 text-base font-semibold items-center">
-        <a href="/" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Home</a>
+        <Link href="/" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Home</Link>
         <div className="relative">
           <div className="flex items-center gap-2">
-            <a 
+            <Link 
               href="/services" 
               className="hover:underline transition-colors" 
               style={{ color: "#1A2341" }}
             >
               Services
-            </a>
+            </Link>
             <button 
               ref={buttonRef}
               onClick={toggleDropdown}
@@ -112,23 +113,23 @@ export default function Navbar() {
                   <div key={col.title} className="flex-1 min-w-[220px]">
                     <div className="flex items-center gap-2 mb-2">
                       <span>{col.icon}</span>
-                      <a 
+                      <Link 
                         href={`/services/${col.title.toLowerCase().replace(/\s+/g, '-')}`}
                         className="uppercase tracking-wide text-xs font-semibold text-[#7B819A] hover:text-[#8958FE] transition-colors"
                       >
                         {col.title}
-                      </a>
+                      </Link>
                     </div>
                     <div className="h-1 w-8 bg-[#E6E8F0] rounded mb-4" />
                     <div className="flex flex-wrap gap-2">
                       {col.items.map(item => (
-                        <a
+                        <Link
                           key={item}
                           href={`/services/${col.title.toLowerCase().replace(/\s+/g, '-')}#${item.toLowerCase().replace(/\s+/g, '-')}`}
                           className="bg-[#F5F7FA] text-[#1A2341] rounded-lg px-4 py-2 text-sm font-medium shadow-sm whitespace-nowrap mb-2 hover:bg-[#E6E8F0] transition"
                         >
                           {item}
-                        </a>
+                        </Link>
                       ))}
                     </div>
                   </div>
@@ -137,10 +138,10 @@ export default function Navbar() {
             </div>
           )}
         </div>
-        <a href="/case-studies" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Case Studies</a>
-        <a href="/about-us" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>About Us</a>
-        <a href="#" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Careers</a>
-        <a href="/contact-us" className="ml-6 px-6 py-2 rounded-lg font-semibold shadow bg-[#F5F7FA] text-[#1A2341] hover:bg-[#E6E8F0] transition" style={{ boxShadow: '0 2px 8px rgba(80, 80, 120, 0.08)' }}>Contact Us</a>
+        <Link href="/case-studies" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Case Studies</Link>
+        <Link href="/about-us" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>About Us</Link>
+        <Link href="#" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Careers</Link>
+        <Link href="/contact-us" className="ml-6 px-6 py-2 rounded-lg font-semibold shadow bg-[#F5F7FA] text-[#1A2341] hover:bg-[#E6E8F0] transition" style={{ boxShadow: '0 2px 8px rgba(80, 80, 120, 0.08)' }}>Contact Us</Link>
       </div>
 
       {/* Mobile Navigation */}
@@ -175,10 +176,10 @@ export default function Navbar() {
             style={{ minHeight: '100vh' }}
           >
             <div className="flex flex-col space-y-4 mt-8">
-              <a href="/" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Home</a>
+              <Link href="/" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Home</Link>
               <div className="space-y-2">
                 <div className="flex items-center justify-between">
-                  <a href="/services" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Services</a>
+                  <Link href="/services" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Services</Link>
                   <button
                     onClick={toggleDropdown}
                     className="p-1 text-[#1A2341] hover:text-[#8958FE] transition-colors"
@@ -192,22 +193,22 @@ export default function Navbar() {
                       <div key={col.title} className="space-y-2">
                         <div className="flex items-center gap-2">
                           <span>{col.icon}</span>
-                          <a
+                          <Link
                             href={`/services/${col.title.toLowerCase().replace(/\s+/g, '-')}`}
                             className="text-sm font-medium text-[#7B819A] hover:text-[#8958FE] transition-colors"
                           >
                             {col.title}
-                          </a>
+                          </Link>
                         </div>
                         <div className="pl-6 space-y-1">
                           {col.items.map(item => (
-                            <a
+                            <Link
                               key={item}
                               href={`/services/${col.title.toLowerCase().replace(/\s+/g, '-')}#${item.toLowerCase().replace(/\s+/g, '-')}`}
                               className="block text-sm text-[#1A2341] hover:text-[#8958FE] transition-colors"
                             >
                               {item}
-                            </a>
+                            </Link>
                           ))}
                         </div>
                       </div>
@@ -215,16 +216,16 @@ export default function Navbar() {
                   </div>
                 )}
               </div>
-              <a href="/case-studies" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Case Studies</a>
-              <a href="/about-us" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">About Us</a>
-              <a href="#" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Careers</a>
-              <a
+              <Link href="/case-studies" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Case Studies</Link>
+              <Link href="/about-us" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">About Us</Link>
+              <Link href="#" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Careers</Link>
+              <Link
                 href="/contact-us"
                 className="mt-4 px-6 py-2 rounded-lg font-semibold text-center bg-[#F5F7FA] text-[#1A2341] hover:bg-[#E6E8F0] transition"
                 style={{ boxShadow: '0 2px 8px rgba(80, 80, 120, 0.08)' }}
               >
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
         )}

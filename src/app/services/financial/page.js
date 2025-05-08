@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const services = [
   {
@@ -162,13 +163,13 @@ export default function FinancialServicesPage() {
             className="bg-[#8958FE] text-white rounded-lg p-8 shadow-lg"
           >
             <h2 className="text-2xl font-bold mb-4">Ready to Optimize Your Financial Strategy?</h2>
-            <p className="mb-6">Let's discuss how our financial services can help achieve your capital markets objectives.</p>
-            <a
+            <p className="mb-6">Let&apos;s discuss how our financial services can help achieve your capital markets objectives.</p>
+            <Link
               href="/contact-us"
               className="inline-block bg-white text-[#8958FE] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
             >
               Contact Us
-            </a>
+            </Link>
           </motion.div>
         </div>
       </div>

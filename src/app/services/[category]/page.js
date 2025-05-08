@@ -490,7 +490,7 @@ export default function ServicePage() {
         <div className="mt-20 text-center">
           <div className="bg-[#8958FE] text-white rounded-lg p-8 shadow-lg max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold mb-4">Ready to Get Started?</h2>
-            <p className="mb-6">Let's discuss how our {serviceData.title.toLowerCase()} services can help achieve your goals.</p>
+            <p className="mb-6">Let&apos;s discuss how our {serviceData.title.toLowerCase()} services can help achieve your goals.</p>
             <a
               href="/contact-us"
               className="inline-block bg-white text-[#8958FE] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"

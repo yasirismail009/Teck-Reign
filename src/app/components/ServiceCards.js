@@ -68,7 +68,13 @@ const ClientsServedCard = () => (
   >
     {/* Image with badge */}
     <div className="relative w-full h-[120px] rounded-t-[32px] overflow-hidden">
-      <img src="/sample-people.jpg" alt="Clients Served" className="object-cover w-full h-full" />
+      <Image 
+        src="/sample-people.jpg" 
+        alt="Clients Served" 
+        width={400}
+        height={120}
+        className="object-cover w-full h-full" 
+      />
       <div className="absolute top-3 right-5 text-xs text-white bg-[#888]/80 px-4 py-1 rounded-full tracking-wide font-semibold">2018 - 2024</div>
     </div>
     {/* Main Stat */}

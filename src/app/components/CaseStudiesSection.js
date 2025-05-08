@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 
 const caseStudies = [
   {
@@ -25,7 +26,13 @@ export default function CaseStudiesSection() {
         {/* Left Card */}
         <div className="flex-1 flex flex-col items-start bg-[#101C3A] rounded-3xl overflow-hidden shadow-lg max-w-sm">
           <div className="w-full h-64 overflow-hidden">
-            <img src={caseStudies[0].image} alt="Case Study 1" className="object-cover w-full h-full" />
+            <Image 
+              src={caseStudies[0].image} 
+              alt="Case Study 1" 
+              width={400}
+              height={256}
+              className="object-cover w-full h-full" 
+            />
           </div>
           <div className="p-6">
             <h3 className="text-lg font-semibold text-white mb-2">{caseStudies[0].title}</h3>
@@ -45,7 +52,13 @@ export default function CaseStudiesSection() {
         {/* Right Card */}
         <div className="flex-1 flex flex-col items-start bg-[#101C3A] rounded-3xl overflow-hidden shadow-lg max-w-sm">
           <div className="w-full h-64 overflow-hidden">
-            <img src={caseStudies[1].image} alt="Case Study 2" className="object-cover w-full h-full" />
+            <Image 
+              src={caseStudies[1].image} 
+              alt="Case Study 2" 
+              width={400}
+              height={256}
+              className="object-cover w-full h-full" 
+            />
           </div>
           <div className="p-6">
             <h3 className="text-lg font-semibold text-white mb-2">{caseStudies[1].title}</h3>
@@ -66,7 +79,13 @@ export default function CaseStudiesSection() {
           <p className="text-gray-200 text-base mb-6">Great Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
           <div className="flex items-center justify-between mt-auto">
             <div className="flex items-center gap-3">
-              <img src="/avatar-1.jpg" alt="Claudia Leal" className="w-10 h-10 rounded-full object-cover border-2 border-white" />
+              <Image 
+                src="/avatar-1.jpg" 
+                alt="Claudia Leal" 
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-full object-cover border-2 border-white" 
+              />
               <span className="text-white font-semibold text-sm">Claudia Leal</span>
             </div>
             <span className="text-[#A084FE] text-2xl font-bold">“”</span>
@@ -77,7 +96,13 @@ export default function CaseStudiesSection() {
           <p className="text-gray-200 text-base mb-6">Great Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
           <div className="flex items-center justify-between mt-auto">
             <div className="flex items-center gap-3">
-              <img src="/avatar-2.jpg" alt="Dianna Beck" className="w-10 h-10 rounded-full object-cover border-2 border-white" />
+              <Image 
+                src="/avatar-2.jpg" 
+                alt="Dianna Beck" 
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-full object-cover border-2 border-white" 
+              />
               <span className="text-white font-semibold text-sm">Dianna Beck</span>
             </div>
             <span className="text-[#A084FE] text-2xl font-bold">“”</span>
@@ -88,7 +113,13 @@ export default function CaseStudiesSection() {
           <p className="text-gray-200 text-base mb-6">Great Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
           <div className="flex items-center justify-between mt-auto">
             <div className="flex items-center gap-3">
-              <img src="/avatar-3.jpg" alt="Natalie Lane" className="w-10 h-10 rounded-full object-cover border-2 border-white" />
+              <Image 
+                src="/avatar-3.jpg" 
+                alt="Natalie Lane" 
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-full object-cover border-2 border-white" 
+              />
               <span className="text-white font-semibold text-sm">Natalie Lane</span>
             </div>
             <span className="text-[#A084FE] text-2xl font-bold">“”</span>
@@ -99,7 +130,13 @@ export default function CaseStudiesSection() {
           <p className="text-gray-200 text-base mb-6">Great Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
           <div className="flex items-center justify-between mt-auto">
             <div className="flex items-center gap-3">
-              <img src="/avatar-3.jpg" alt="Natalie Lane" className="w-10 h-10 rounded-full object-cover border-2 border-white" />
+              <Image 
+                src="/avatar-3.jpg" 
+                alt="Natalie Lane" 
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-full object-cover border-2 border-white" 
+              />
               <span className="text-white font-semibold text-sm">Natalie Lane</span>
             </div>
             <span className="text-[#A084FE] text-2xl font-bold">“”</span>
@@ -110,7 +147,13 @@ export default function CaseStudiesSection() {
           <p className="text-gray-200 text-base mb-6">Great Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
           <div className="flex items-center justify-between mt-auto">
             <div className="flex items-center gap-3">
-              <img src="/avatar-1.jpg" alt="Claudia Leal" className="w-10 h-10 rounded-full object-cover border-2 border-white" />
+              <Image 
+                src="/avatar-1.jpg" 
+                alt="Claudia Leal" 
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-full object-cover border-2 border-white" 
+              />
               <span className="text-white font-semibold text-sm">Claudia Leal</span>
             </div>
             <span className="text-[#A084FE] text-2xl font-bold">“”</span>
@@ -121,7 +164,13 @@ export default function CaseStudiesSection() {
           <p className="text-gray-200 text-base mb-6">Great Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
           <div className="flex items-center justify-between mt-auto">
             <div className="flex items-center gap-3">
-              <img src="/avatar-2.jpg" alt="Dianna Beck" className="w-10 h-10 rounded-full object-cover border-2 border-white" />
+              <Image 
+                src="/avatar-2.jpg" 
+                alt="Dianna Beck" 
+                width={40}
+                height={40}
+                className="w-10 h-10 rounded-full object-cover border-2 border-white" 
+              />
               <span className="text-white font-semibold text-sm">Dianna Beck</span>
             </div>
             <span className="text-[#A084FE] text-2xl font-bold">“”</span>
