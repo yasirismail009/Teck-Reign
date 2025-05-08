@@ -1,8 +1,16 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-primary: #8958FE;
+  --color-primary-dark: #030D28;
+  --color-secondary: #2E3138;
+  --color-surface: #E7E7EF;
+  --color-surface-light: #F9F9FB;
+  --color-accent: #1C253E;
+  --background: #FFFFFF;
+  --foreground: #030D28;
+  --text-main: #030D28;
+  --text-light: #FFFFFF;
 }
 
 @theme inline {
@@ -14,8 +22,16 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #F9F9FB;
+    --foreground: #F9F9FB;
+    --color-primary: #8958FE;
+    --color-primary-dark: #030D28;
+    --color-secondary: #2E3138;
+    --color-surface: #1C253E;
+    --color-surface-light: #2E3138;
+    --color-accent: #E7E7EF;
+    --text-main: #F9F9FB;
+    --text-light: #FFFFFF;
   }
 }
 
@@ -23,4 +39,34 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+}
+
+.bg-hero-gradient {
+  background: linear-gradient(120deg, #f9f9fb 60%, #e7e7ef 100%);
+}
+
+.bg-hero-overlay {
+  position: absolute;
+  top: 0; left: 0; width: 100vw; height: 400px;
+  background: linear-gradient(135deg, #f9f9fb 80%, #8958fe22 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+.card-glass {
+  background: rgba(255,255,255,0.7);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+  backdrop-filter: blur(8px);
+  border-radius: 28px;
+  border: 1px solid #e7e7ef44;
+}
+
+.card-shadow {
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.10);
+}
+
+@keyframes slide-infinite {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
 }
