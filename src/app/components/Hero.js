@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center text-center mb-16 relative">
+    <section className="flex flex-col items-center text-center mb-16 relative" >
       <h1 className="mb-3">
         <span className="block text-3xl sm:text-5xl md:text-6xl font-light text-gray-400" style={{ letterSpacing: '-0.02em' }}>
           Your Global Partner

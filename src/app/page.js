@@ -13,7 +13,7 @@ export default function Home() {
       <div className="absolute inset-0 z-0"></div>
       
       {/* Main content container */}
-      <div className="w-full relative z-10">
+      <div className="w-full relative">
         <div className="mx-auto px-6 sm:px-12 lg:px-20">
           <Hero />
         </div>

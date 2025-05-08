@@ -101,11 +101,11 @@ export default function Navbar() {
             </button>
           </div>
           {showDropdown && (
-            <div className="absolute left-1/2 -translate-x-1/2 top-full z-50 flex flex-col items-center" style={{ width: '100%' }}>
+            <div className="absolute  left-1/2 -translate-x-1/2 top-full flex flex-col items-center" style={{ width: '100%' }}>
               <div className="w-0 h-0 border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-white mb-[-6px]" />
               <div 
                 ref={dropdownRef}
-                className="min-w-[600px] max-w-screen-md bg-white shadow-xl rounded-3xl border border-gray-100 flex p-8 gap-6 overflow-x-hidden"
+                className="min-w-[600px] z-10 max-w-screen-md bg-white shadow-xl rounded-3xl border border-gray-100 flex p-8 gap-6 overflow-x-hidden"
                 style={{ minHeight: '220px' }}
               >
                 {servicesData.map((col) => (
