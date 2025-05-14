@@ -141,11 +141,11 @@ export default function Navbar() {
         <Link href="/case-studies" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Case Studies</Link>
         <Link href="/about-us" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>About Us</Link>
         <Link href="#" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Careers</Link>
-        <Link href="/contact-us" className="ml-6 px-6 py-2 rounded-lg font-semibold shadow bg-[#F5F7FA] text-[#1A2341] hover:bg-[#E6E8F0] transition" style={{ boxShadow: '0 2px 8px rgba(80, 80, 120, 0.08)' }}>Contact Us</Link>
+        <Link href="/contact-us" className="ml-6 px-6 py-2 rounded-lg font-semibold shadow bg-[#8958FE] text-white hover:text-[#8958FE] hover:bg-[#E6E8F0] transition" style={{ boxShadow: '0 2px 8px rgba(80, 80, 120, 0.08)' }}>Contact Us</Link>
       </div>
 
       {/* Mobile Navigation */}
-      <div className="md:hidden" >
+      <div className="md:hidden relative">
         <button
           onClick={toggleMobileMenu}
           className="p-2 text-[#1A2341] focus:outline-none"
@@ -168,66 +168,67 @@ export default function Navbar() {
           </svg>
         </button>
 
-        {/* Mobile Menu */}
+        {/* Mobile Menu Popover */}
         {isMobileMenuOpen && (
-          <div
-            ref={mobileMenuRef}
-            className="fixed inset-0 bg-white z-[100] flex flex-col py-8 px-6 overflow-y-auto"
-            style={{ minHeight: '100vh' }}
-          >
-            <div className="flex flex-col space-y-4 mt-8">
-              <Link href="/" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Home</Link>
-              <div className="space-y-2">
-                <div className="flex items-center justify-between">
-                  <Link href="/services" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Services</Link>
-                  <button
-                    onClick={toggleDropdown}
-                    className="p-1 text-[#1A2341] hover:text-[#8958FE] transition-colors"
-                  >
-                    {showDropdown ? '▲' : '▼'}
-                  </button>
-                </div>
-                {showDropdown && (
-                  <div className="pl-4 space-y-2 border-l-2 border-gray-100">
-                    {servicesData.map((col) => (
-                      <div key={col.title} className="space-y-2">
-                        <div className="flex items-center gap-2">
-                          <span>{col.icon}</span>
-                          <Link
-                            href={`/services/${col.title.toLowerCase().replace(/\s+/g, '-')}`}
-                            className="text-sm font-medium text-[#7B819A] hover:text-[#8958FE] transition-colors"
-                          >
-                            {col.title}
-                          </Link>
-                        </div>
-                        <div className="pl-6 space-y-1">
-                          {col.items.map(item => (
-                            <Link
-                              key={item}
-                              href={`/services/${col.title.toLowerCase().replace(/\s+/g, '-')}#${item.toLowerCase().replace(/\s+/g, '-')}`}
-                              className="block text-sm text-[#1A2341] hover:text-[#8958FE] transition-colors"
-                            >
-                              {item}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    ))}
+          <>
+            <div className="fixed inset-0 z-[99]" onClick={toggleMobileMenu} />
+            <div
+              ref={mobileMenuRef}
+              className="absolute top-full right-0 w-[280px] bg-white z-[100] rounded-xl shadow-lg border border-gray-100 mt-2 py-4"
+            >
+              <div className="flex flex-col space-y-2 px-4">
+                <Link 
+                  href="/" 
+                  className="text-[#1A2341] hover:text-[#8958FE] transition-colors py-2"
+                  onClick={toggleMobileMenu}
+                >
+                  Home
+                </Link>
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between">
+                    <Link 
+                      href="/services" 
+                      className="text-[#1A2341] hover:text-[#8958FE] transition-colors py-2"
+                      onClick={toggleMobileMenu}
+                    >
+                      Services
+                    </Link>
+                  
                   </div>
-                )}
+                
+                </div>
+                <Link 
+                  href="/case-studies" 
+                  className="text-[#1A2341] hover:text-[#8958FE] transition-colors py-2"
+                  onClick={toggleMobileMenu}
+                >
+                  Case Studies
+                </Link>
+                <Link 
+                  href="/about-us" 
+                  className="text-[#1A2341] hover:text-[#8958FE] transition-colors py-2"
+                  onClick={toggleMobileMenu}
+                >
+                  About Us
+                </Link>
+                <Link 
+                  href="#" 
+                  className="text-[#1A2341] hover:text-[#8958FE] transition-colors py-2"
+                  onClick={toggleMobileMenu}
+                >
+                  Careers
+                </Link>
+                <Link
+                  href="/contact-us"
+                  className="mt-2 px-6 py-2 rounded-lg font-semibold text-center bg-[#F5F7FA] text-[#1A2341] hover:bg-[#E6E8F0] transition"
+                  style={{ boxShadow: '0 2px 8px rgba(80, 80, 120, 0.08)' }}
+                  onClick={toggleMobileMenu}
+                >
+                  Contact Us
+                </Link>
               </div>
-              <Link href="/case-studies" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Case Studies</Link>
-              <Link href="/about-us" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">About Us</Link>
-              <Link href="#" className="text-[#1A2341] hover:text-[#8958FE] transition-colors">Careers</Link>
-              <Link
-                href="/contact-us"
-                className="mt-4 px-6 py-2 rounded-lg font-semibold text-center bg-[#F5F7FA] text-[#1A2341] hover:bg-[#E6E8F0] transition"
-                style={{ boxShadow: '0 2px 8px rgba(80, 80, 120, 0.08)' }}
-              >
-                Contact Us
-              </Link>
             </div>
-          </div>
+          </>
         )}
       </div>
     </nav>

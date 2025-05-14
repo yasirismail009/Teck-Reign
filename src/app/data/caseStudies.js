@@ -86,5 +86,115 @@ export const caseStudies = [
         position: "Operations Director, Global Manufacturing Inc"
       }
     }
+  },
+  {
+    id: 5,
+    title: "Enterprise Threat Intelligence Platform",
+    description: "Building a comprehensive threat intelligence and assessment platform for enterprise security",
+    image: "/case-studies/threat-intel.jpg",
+    category: "Cybersecurity",
+    client: "Fortune 500 Tech Corp",
+    duration: "16 months",
+    results: ["99.9% Threat Detection", "60% Faster Response", "Real-time Monitoring"],
+    content: {
+      overview: "A Fortune 500 technology corporation needed a comprehensive threat intelligence platform to protect their global operations. They required real-time threat detection, assessment, and response capabilities to safeguard their critical assets.",
+      challenge: "The client faced several challenges:\n\n• Increasing sophisticated cyber threats\n• Limited visibility into emerging threats\n• Slow response times to security incidents\n• Complex global infrastructure\n• Regulatory compliance requirements\n• Integration with existing security tools",
+      solution: "We developed an advanced threat intelligence platform:\n\n• Implemented AI-powered threat detection\n• Created real-time monitoring dashboards\n• Developed automated response systems\n• Built threat intelligence sharing capabilities\n• Integrated with existing security infrastructure\n• Implemented compliance reporting tools",
+      results: "The platform delivered exceptional results:\n\n• 99.9% threat detection accuracy\n• 60% faster incident response time\n• 75% reduction in false positives\n• Real-time threat monitoring across 50+ countries\n• Automated compliance reporting\n• Enhanced security team efficiency",
+      technologies: ["Python", "TensorFlow", "Elasticsearch", "Kafka", "React", "AWS"],
+      testimonial: {
+        quote: "The threat intelligence platform has transformed our security operations. We now have unprecedented visibility into threats and can respond to incidents in real-time.",
+        author: "James Wilson",
+        position: "CISO, Fortune 500 Tech Corp"
+      }
+    }
+  },
+  {
+    id: 6,
+    title: "Privacy Defender Mobile Security Suite",
+    description: "Developing a comprehensive mobile privacy protection solution for consumers",
+    image: "/case-studies/privacy-defender.jpg",
+    category: "Mobile Security",
+    client: "Consumer Tech Alliance",
+    duration: "12 months",
+    results: ["1M+ Downloads", "95% User Satisfaction", "Zero Data Breaches"],
+    content: {
+      overview: "Consumer Tech Alliance needed a comprehensive mobile security solution to protect their users' privacy and data. They required a user-friendly yet powerful security suite that could protect against various mobile threats.",
+      challenge: "The project faced several challenges:\n\n• Complex mobile threat landscape\n• User privacy concerns\n• Performance impact considerations\n• Cross-platform compatibility\n• Real-time protection requirements\n• User experience optimization",
+      solution: "We developed the Privacy Defender suite:\n\n• Created real-time threat detection\n• Implemented privacy protection features\n• Developed secure browsing capabilities\n• Built app permission management\n• Created data encryption tools\n• Implemented secure VPN integration",
+      results: "The solution achieved remarkable results:\n\n• Over 1 million downloads in first year\n• 95% user satisfaction rating\n• Zero successful data breaches\n• 99.9% threat detection rate\n• 50% reduction in privacy incidents\n• Enhanced user trust and confidence",
+      technologies: ["Swift", "Kotlin", "React Native", "OpenVPN", "TensorFlow", "Firebase"],
+      testimonial: {
+        quote: "Privacy Defender has set a new standard in mobile security. Our users feel safer and more in control of their digital privacy.",
+        author: "Lisa Chen",
+        position: "Product Director, Consumer Tech Alliance"
+      }
+    }
+  },
+  {
+    id: 7,
+    title: "Pligence Corporate Website Development",
+    description: "Creating a modern, secure, and user-friendly corporate website",
+    image: "/case-studies/pligence-website.jpg",
+    category: "Web Development",
+    client: "Pligence",
+    duration: "6 months",
+    results: ["300% Traffic Increase", "40% Lead Generation", "Enhanced User Experience"],
+    content: {
+      overview: "Pligence needed a modern, secure, and user-friendly corporate website to showcase their cybersecurity solutions and generate leads. The website needed to reflect their professional brand while maintaining high security standards.",
+      challenge: "The project faced several challenges:\n\n• Complex product portfolio presentation\n• Security requirements for corporate website\n• Lead generation optimization\n• Mobile responsiveness\n• Performance optimization\n• Content management needs",
+      solution: "We developed a comprehensive website solution:\n\n• Created modern, responsive design\n• Implemented secure architecture\n• Developed lead generation system\n• Built content management system\n• Optimized for performance\n• Integrated analytics and tracking",
+      results: "The website delivered outstanding results:\n\n• 300% increase in website traffic\n• 40% improvement in lead generation\n• 99.9% uptime\n• Enhanced user engagement\n• Improved conversion rates\n• Positive brand perception",
+      technologies: ["Next.js", "React", "Node.js", "MongoDB", "AWS", "Cloudflare"],
+      testimonial: {
+        quote: "The new website perfectly represents our brand and has significantly improved our online presence and lead generation capabilities.",
+        author: "Mark Thompson",
+        position: "Marketing Director, Pligence"
+      }
+    }
+  },
+  {
+    id: 8,
+    title: "Use Case Expert AI Platform",
+    description: "Developing an AI-powered business process optimization platform",
+    image: "/case-studies/use-case-expert.jpg",
+    category: "AI Solutions",
+    client: "Enterprise Solutions Corp",
+    duration: "14 months",
+    results: ["85% Process Efficiency", "40% Cost Reduction", "Real-time Analytics"],
+    content: {
+      overview: "Enterprise Solutions Corp needed an AI-powered platform to optimize their business processes and decision-making. They required a solution that could analyze complex workflows, identify inefficiencies, and provide actionable insights for improvement.",
+      challenge: "The client faced several challenges:\n\n• Complex business processes across departments\n• Inefficient decision-making workflows\n• Lack of real-time process insights\n• High operational costs\n• Limited process automation\n• Data silos across systems",
+      solution: "We developed the Use Case Expert platform:\n\n• Implemented AI-powered process analysis\n• Created real-time workflow monitoring\n• Developed predictive analytics engine\n• Built automated optimization recommendations\n• Integrated with existing business systems\n• Implemented natural language processing for insights",
+      results: "The platform delivered exceptional results:\n\n• 85% improvement in process efficiency\n• 40% reduction in operational costs\n• Real-time process analytics and insights\n• 60% faster decision-making\n• Automated process optimization\n• Enhanced cross-department collaboration",
+      technologies: ["Python", "TensorFlow", "Azure", "Kubernetes", "React", "MongoDB"],
+      testimonial: {
+        quote: "Use Case Expert has transformed how we analyze and optimize our business processes. The AI-powered insights have led to significant efficiency improvements and cost savings.",
+        author: "Emily Rodriguez",
+        position: "COO, Enterprise Solutions Corp"
+      }
+    }
+  },
+  {
+    id: 9,
+    title: "Plexaar Cloud Integration Platform",
+    description: "Building a comprehensive cloud integration and management solution",
+    image: "/case-studies/plexaar.jpg",
+    category: "Cloud Solutions",
+    client: "Global Tech Services",
+    duration: "18 months",
+    results: ["99.9% Uptime", "70% Faster Deployment", "Seamless Integration"],
+    content: {
+      overview: "Global Tech Services needed a robust cloud integration platform to manage their multi-cloud infrastructure and streamline application deployment. They required a solution that could handle complex cloud environments while ensuring security and scalability.",
+      challenge: "The project faced several challenges:\n\n• Complex multi-cloud environment\n• Inconsistent deployment processes\n• Security and compliance requirements\n• Integration with legacy systems\n• Performance optimization needs\n• Resource management complexity",
+      solution: "We developed the Plexaar platform:\n\n• Created unified cloud management interface\n• Implemented automated deployment pipelines\n• Developed advanced security controls\n• Built real-time monitoring and analytics\n• Integrated with major cloud providers\n• Implemented resource optimization",
+      results: "The solution achieved remarkable results:\n\n• 99.9% platform uptime\n• 70% faster application deployment\n• Seamless multi-cloud integration\n• 50% reduction in operational costs\n• Enhanced security compliance\n• Improved resource utilization",
+      technologies: ["AWS", "Azure", "Google Cloud", "Kubernetes", "Terraform", "React"],
+      testimonial: {
+        quote: "Plexaar has revolutionized our cloud operations. The platform's ability to manage complex cloud environments while ensuring security and efficiency has been game-changing.",
+        author: "Michael Chang",
+        position: "Cloud Architect, Global Tech Services"
+      }
+    }
   }
 ]; 

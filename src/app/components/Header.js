@@ -55,7 +55,7 @@ export default function Header() {
           <span className="font-extrabold text-xl text-white tracking-tight">T</span>
         </div>
         <span className="font-extrabold text-2xl ml-2 tracking-tight text-[#1A2341]">TECKREIGN</span>
-        <span className="hidden sm:inline text-xs ml-2 font-medium text-[#A0A4B8]">Intelligent Communications</span>
+        <span className="hidden sm:inline text-xs ml-2 font-medium text-[#A0A4B8]">Future Forged</span>
       </div>
       <div className="absolute right-4 top-1/3 -translate-y-1/2 sm:static sm:translate-y-0">
         <Navbar servicesMenu={servicesMenu} />

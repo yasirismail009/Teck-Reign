@@ -93,21 +93,21 @@ export default function AboutUs() {
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[#E6E8F0]"></div>
-              <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">John Doe</h3>
-              <p className="text-[#8958FE] mb-2">CEO & Founder</p>
-              <p className="text-[#7B819A]">Visionary leader with 15+ years of industry experience</p>
+              <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Muhammad Yasir Ismail</h3>
+              <p className="text-[#8958FE] mb-2">Co-Founder</p>
+              <p className="text-[#7B819A]">Visionary leader driving company innovation and growth</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[#E6E8F0]"></div>
-              <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Jane Smith</h3>
-              <p className="text-[#8958FE] mb-2">CTO</p>
-              <p className="text-[#7B819A]">Technology expert driving innovation and excellence</p>
+              <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Manshoor</h3>
+              <p className="text-[#8958FE] mb-2">Co-Founder</p>
+              <p className="text-[#7B819A]">Strategic leader shaping company direction and success</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[#E6E8F0]"></div>
-              <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Mike Johnson</h3>
-              <p className="text-[#8958FE] mb-2">COO</p>
-              <p className="text-[#7B819A]">Operations specialist ensuring seamless delivery</p>
+              <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Wajahat</h3>
+              <p className="text-[#8958FE] mb-2">Business Development Manager</p>
+              <p className="text-[#7B819A]">Driving business growth and client relationships</p>
             </div>
           </div>
         </div>

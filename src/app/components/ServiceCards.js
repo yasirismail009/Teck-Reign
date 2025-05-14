@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Image from 'next/image';
+import TechCircuitSVG from './TechCircuitSVG';
 
 const fadeOverlay = (
   // Subtle white fade at the very bottom only
@@ -38,17 +39,17 @@ const FinancialServicesCard = () => (
     }}
   >
     <div>
-      <h3 className="text-white font-bold text-[2.3rem] leading-tight mb-8">Financial Services</h3>
+      <h3 className="text-white font-bold text-[2.3rem] leading-tight mb-8">Tech Services</h3>
       <div className="relative h-[180px] mb-8">
         {/* Staggered, overlapping chips */}
-        <span className="absolute left-0 top-0 bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-10deg]">Investor Relations</span>
-        <span className="absolute left-[120px] top-[30px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[8deg]">Rights Issues</span>
-        <span className="absolute left-[10px] top-[60px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-5deg]">M&A Advisory</span>
-        <span className="absolute left-[160px] top-[80px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[12deg]">IPO Communications</span>
-        <span className="absolute left-[60px] top-[110px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-7deg]">Funds Management</span>
-        <span className="absolute left-[200px] top-[130px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[6deg]">Bonds Issuances</span>
-        <span className="absolute left-[20px] top-[150px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-8deg]">Financial Analysis</span>
-        <span className="absolute left-[180px] top-[160px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[10deg]">Regulatory Compliance</span>
+        <span className="absolute left-0 top-0 bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-10deg]">Cloud Solutions</span>
+        <span className="absolute left-[120px] top-[30px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[8deg]">AI Development</span>
+        <span className="absolute left-[10px] top-[60px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-5deg]">Web Development</span>
+        <span className="absolute left-[160px] top-[80px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[12deg]">Mobile Apps</span>
+        <span className="absolute left-[60px] top-[110px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-7deg]">DevOps</span>
+        <span className="absolute left-[200px] top-[130px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[6deg]">UI/UX Design</span>
+        <span className="absolute left-[20px] top-[150px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-8deg]">Cybersecurity</span>
+        <span className="absolute left-[180px] top-[160px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[10deg]">Data Analytics</span>
       </div>
     </div>
     <div className="mt-auto">
@@ -68,14 +69,8 @@ const ClientsServedCard = () => (
   >
     {/* Image with badge */}
     <div className="relative w-full h-[120px] rounded-t-[32px] overflow-hidden">
-      <Image 
-        src="/sample-people.jpg" 
-        alt="Clients Served" 
-        width={400}
-        height={120}
-        className="object-cover w-full h-full" 
-      />
-      <div className="absolute top-3 right-5 text-xs text-white bg-[#888]/80 px-4 py-1 rounded-full tracking-wide font-semibold">2018 - 2024</div>
+      <TechCircuitSVG className="w-full h-full" width={350} height={350}/>
+      <div className="absolute top-3 right-5 text-xs text-white bg-[#888]/80 px-4 py-1 rounded-full tracking-wide font-semibold">2024 - 2025</div>
     </div>
     {/* Main Stat */}
     <div className="flex flex-col items-center justify-center flex-1 py-6">
@@ -169,20 +164,34 @@ const InnovationCard = () => (
       overflow: 'hidden',
     }}
   >
-    {/* SVG Upward Graph */}
+    {/* Tech Circuit Pattern */}
     <svg className="absolute right-6 top-8 w-20 h-20 z-0 opacity-40" viewBox="0 0 80 80" fill="none">
-      <rect x="10" y="50" width="8" height="20" rx="2" fill="#fff" />
-      <rect x="26" y="40" width="8" height="30" rx="2" fill="#fff" />
-      <rect x="42" y="30" width="8" height="40" rx="2" fill="#fff" />
-      <rect x="58" y="15" width="8" height="55" rx="2" fill="#fff" />
-      <path d="M10 60 L26 50 L42 40 L58 20" stroke="#fff" strokeWidth="3" fill="none" />
-      <path d="M58 20 l-4 8 h8z" fill="#fff" />
+      <path d="M10 40 L30 40 L30 20 L50 20" stroke="#fff" strokeWidth="2" fill="none" />
+      <path d="M50 20 L50 60 L70 60" stroke="#fff" strokeWidth="2" fill="none" />
+      <circle cx="30" cy="40" r="4" fill="#fff" />
+      <circle cx="50" cy="20" r="4" fill="#fff" />
+      <circle cx="50" cy="60" r="4" fill="#fff" />
+      <circle cx="70" cy="60" r="4" fill="#fff" />
     </svg>
     <div className="relative z-10">
-      <h3 className="font-bold text-xl mb-10">Innovation & Growth</h3>
-      <div className="flex flex-col items-start justify-center h-full">
-        <span className="text-5xl font-extrabold mb-2 leading-none">$5M<span className="text-3xl align-top">+</span></span>
-        <span className="text-base opacity-90">Invested in Innovation</span>
+      <h3 className="font-bold text-xl mb-6">Tech Innovation</h3>
+      <div className="flex flex-col items-start justify-center h-full space-y-6">
+        <div>
+          <span className="text-5xl font-extrabold mb-2 leading-none">99.9<span className="text-3xl align-top">%</span></span>
+          <span className="text-base opacity-90 block">System Uptime</span>
+        </div>
+        <div>
+          <span className="text-3xl font-extrabold mb-2 leading-none">50<span className="text-xl align-top">+</span></span>
+          <span className="text-base opacity-90 block">Tech Patents</span>
+        </div>
+        <div>
+          <span className="text-3xl font-extrabold mb-2 leading-none">10M<span className="text-xl align-top">+</span></span>
+          <span className="text-base opacity-90 block">API Calls/Day</span>
+        </div>
+        <div>
+          <span className="text-3xl font-extrabold mb-2 leading-none">15<span className="text-xl align-top">+</span></span>
+          <span className="text-base opacity-90 block">Cloud Regions</span>
+        </div>
       </div>
     </div>
   </div>

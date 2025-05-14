@@ -1,6 +1,6 @@
 'use client'
-import React from 'react';
-import { useParams } from 'next/navigation';
+import React, { useEffect } from 'react';
+import { useParams, useSearchParams } from 'next/navigation';
 
 const servicesData = {
   'software-development': {
@@ -403,6 +403,17 @@ export default function ServicePage() {
   const params = useParams();
   const category = params.category;
   const serviceData = servicesData[category];
+  const [searchParams] = useSearchParams();
+  const section = searchParams.get('section');
+
+  useEffect(() => {
+    if (section) {
+      const element = document.getElementById(section);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [section]);
 
   if (!serviceData) {
     return (
@@ -447,6 +458,7 @@ export default function ServicePage() {
           {serviceData.items.map((item, index) => (
             <div 
               key={index}
+              id={item.title.toLowerCase().replace(/\s+/g, '-')}
               className="bg-white rounded-xl shadow-lg p-8 hover:shadow-xl transition-all duration-300 border border-gray-100"
             >
               {/* <div className="text-4xl mb-6">{serviceData.icon}</div> */}
