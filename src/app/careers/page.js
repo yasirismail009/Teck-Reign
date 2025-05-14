@@ -62,7 +62,7 @@ export default function CareersPage() {
       title: "Senior Frontend Developer",
       type: "Full-time",
       location: "Remote / Hybrid",
-      description: "We're looking for a Senior Frontend Developer to join our team and help build the next generation of web applications. You'll work with modern technologies and collaborate with cross-functional teams to deliver exceptional user experiences.",
+      description: "We&apos;re looking for a Senior Frontend Developer to join our team and help build the next generation of web applications. You&apos;ll work with modern technologies and collaborate with cross-functional teams to deliver exceptional user experiences.",
       requirements: [
         "5+ years of experience in frontend development",
         "Strong expertise in React.js and Next.js",
@@ -84,7 +84,7 @@ export default function CareersPage() {
       title: "Backend Developer",
       type: "Full-time",
       location: "Remote / Hybrid",
-      description: "Join our backend team to build scalable and robust server-side applications. You'll work on designing and implementing APIs, database architecture, and cloud infrastructure solutions.",
+      description: "Join our backend team to build scalable and robust server-side applications. You&apos;ll work on designing and implementing APIs, database architecture, and cloud infrastructure solutions.",
       requirements: [
         "4+ years of backend development experience",
         "Strong expertise in Node.js and Express",
@@ -106,7 +106,7 @@ export default function CareersPage() {
       title: "DevOps Engineer",
       type: "Full-time",
       location: "Remote / Hybrid",
-      description: "We're seeking a DevOps Engineer to help streamline our development and deployment processes. You'll work on automating infrastructure, implementing CI/CD pipelines, and ensuring system reliability.",
+      description: "We&apos;re seeking a DevOps Engineer to help streamline our development and deployment processes. You&apos;ll work on automating infrastructure, implementing CI/CD pipelines, and ensuring system reliability.",
       requirements: [
         "3+ years of DevOps experience",
         "Experience with Docker and Kubernetes",
@@ -134,7 +134,7 @@ export default function CareersPage() {
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">Join Our Team</h1>
             <p className="text-xl opacity-90 mb-8">
-              Build the future of technology with us. We're looking for passionate individuals
+              Build the future of technology with us. We&apos;re looking for passionate individuals
               who want to make a difference.
             </p>
             <div className="w-24 h-1 bg-white mx-auto mb-8"></div>

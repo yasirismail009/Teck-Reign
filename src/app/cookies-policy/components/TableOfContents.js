@@ -1,9 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 
 const TableOfContents = () => {
   const [activeSection, setActiveSection] = useState('');
 
-  const sections = [
+  const sections = useMemo(() => [
     { id: 'introduction', title: '1. Introduction' },
     { id: 'what-are-cookies', title: '2. What Are Cookies' },
     { id: 'types-of-cookies', title: '3. Types of Cookies We Use' },
@@ -13,7 +13,7 @@ const TableOfContents = () => {
     { id: 'cookie-preferences', title: '7. Managing Cookie Preferences' },
     { id: 'updates', title: '8. Updates to This Policy' },
     { id: 'contact', title: '9. Contact Us' },
-  ];
+  ], []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,7 +33,7 @@ const TableOfContents = () => {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [sections]);
 
   return (
     <div className="sticky top-24 max-h-[calc(100vh-6rem)] overflow-y-auto">

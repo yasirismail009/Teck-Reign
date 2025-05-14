@@ -16,7 +16,7 @@ const CookiesPolicy = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
                 <div className="prose prose-gray max-w-none">
                   <p className="text-gray-600 mb-4">
-                    Welcome to TeckReign's Cookies Policy. This policy explains how we use cookies and similar tracking technologies on our website. By using our website, you consent to the use of cookies as described in this policy.
+                    Welcome to TeckReign&apos;s Cookies Policy. This policy explains how we use cookies and similar tracking technologies on our website. By using our website, you consent to the use of cookies as described in this policy.
                   </p>
                   <p className="text-gray-600">
                     We are committed to protecting your privacy and ensuring you have a positive experience on our website. This policy should be read alongside our Privacy Policy and Terms and Conditions.
@@ -33,8 +33,8 @@ const CookiesPolicy = () => {
                   <ul className="list-disc pl-6 text-gray-600 space-y-2">
                     <li>Session cookies: Temporary cookies that expire when you close your browser</li>
                     <li>Persistent cookies: Remain on your device for a specified period</li>
-                    <li>First-party cookies: Set by the website you're visiting</li>
-                    <li>Third-party cookies: Set by a different website than the one you're visiting</li>
+                    <li>First-party cookies: Set by the website you&apos;re visiting</li>
+                    <li>Third-party cookies: Set by a different website than the one you&apos;re visiting</li>
                   </ul>
                 </div>
               </section>
@@ -118,7 +118,7 @@ const CookiesPolicy = () => {
                     <li>Browser settings: Most web browsers allow you to control cookies through their settings</li>
                     <li>Cookie consent: We provide a cookie consent banner when you first visit our website</li>
                     <li>Third-party opt-outs: Many third-party services provide opt-out mechanisms</li>
-                    <li>Do Not Track: Some browsers offer a "Do Not Track" feature</li>
+                    <li>Do Not Track: Some browsers offer a &quot;Do Not Track&quot; feature</li>
                   </ul>
                   <p className="text-gray-600 mt-4">
                     Please note that disabling certain cookies may affect the functionality of our website.
@@ -148,7 +148,7 @@ const CookiesPolicy = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">8. Updates to This Policy</h2>
                 <div className="prose prose-gray max-w-none">
                   <p className="text-gray-600">
-                    We may update this Cookies Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by posting the updated policy on our website and updating the "Last Updated" date.
+                    We may update this Cookies Policy from time to time to reflect changes in our practices or for other operational, legal, or regulatory reasons. We will notify you of any material changes by posting the updated policy on our website and updating the &quot;Last Updated&quot; date.
                   </p>
                 </div>
               </section>

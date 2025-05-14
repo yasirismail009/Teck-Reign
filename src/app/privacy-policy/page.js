@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
                 <div className="prose prose-gray max-w-none">
                   <p className="text-gray-600 mb-4">
-                    Welcome to TeckReign's Privacy Policy. This document outlines how we collect, use, and protect your personal information when you use our website and services. We are committed to ensuring that your privacy is protected and that we comply with all applicable data protection laws and regulations.
+                    Welcome to TeckReign&apos;s Privacy Policy. This document outlines how we collect, use, and protect your personal information when you use our website and services. We are committed to ensuring that your privacy is protected and that we comply with all applicable data protection laws and regulations.
                   </p>
                   <p className="text-gray-600">
                     By using our website and services, you consent to the collection and use of information in accordance with this policy. We may update this policy from time to time, and any changes will be posted on this page.
@@ -171,7 +171,7 @@ const PrivacyPolicy = () => {
               </section>
 
               <section id="children-privacy" className="scroll-mt-24">
-                <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Children's Privacy</h2>
+                <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Children&apos;s Privacy</h2>
                 <div className="prose prose-gray max-w-none">
                   <p className="text-gray-600">
                     Our services are not intended for individuals under the age of 16. We do not knowingly collect personal information from children. If you believe we have collected information from a child, please contact us immediately.
@@ -183,7 +183,7 @@ const PrivacyPolicy = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">10. Changes to This Policy</h2>
                 <div className="prose prose-gray max-w-none">
                   <p className="text-gray-600">
-                    We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the updated policy on our website and updating the "Last Updated" date. We encourage you to review this policy regularly.
+                    We may update this Privacy Policy periodically to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the updated policy on our website and updating the &quot;Last Updated&quot; date. We encourage you to review this policy regularly.
                   </p>
                 </div>
               </section>

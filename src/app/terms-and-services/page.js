@@ -16,7 +16,7 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
                 <div className="prose prose-gray max-w-none">
                   <p className="text-gray-600 mb-4">
-                    Welcome to TeckReign's Terms of Service. This agreement outlines the terms and conditions for using our services. By accessing or using our platform, you agree to be bound by these terms. Please read them carefully before proceeding.
+                    Welcome to TeckReign&apos;s Terms of Service. This agreement outlines the terms and conditions for using our services. By accessing or using our platform, you agree to be bound by these terms. Please read them carefully before proceeding.
                   </p>
                   <p className="text-gray-600">
                     These terms form a legally binding agreement between you and TeckReign. If you do not agree with any part of these terms, you may not use our services.
@@ -28,11 +28,11 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Definitions</h2>
                 <div className="prose prose-gray max-w-none">
                   <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                    <li>"Platform" refers to TeckReign's website and all associated services</li>
-                    <li>"User" refers to any individual or entity using our Platform</li>
-                    <li>"Content" refers to all materials, information, and data available through our Platform</li>
-                    <li>"Account" refers to a user's registration with our Platform</li>
-                    <li>"Services" refers to all features, functionality, and offerings provided by TeckReign</li>
+                    <li>&quot;Platform&quot; refers to TeckReign&apos;s website and all associated services</li>
+                    <li>&quot;User&quot; refers to any individual or entity using our Platform</li>
+                    <li>&quot;Content&quot; refers to all materials, information, and data available through our Platform</li>
+                    <li>&quot;Account&quot; refers to a user&apos;s registration with our Platform</li>
+                    <li>&quot;Services&quot; refers to all features, functionality, and offerings provided by TeckReign</li>
                   </ul>
                 </div>
               </section>
@@ -107,7 +107,7 @@ const TermsOfService = () => {
                     To the maximum extent permitted by law:
                   </p>
                   <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                    <li>We provide the Platform "as is" without warranties</li>
+                    <li>We provide the Platform &quot;as is&quot; without warranties</li>
                     <li>We are not liable for any indirect, incidental, or consequential damages</li>
                     <li>Our total liability shall not exceed the amount paid by you for the Services</li>
                     <li>We are not responsible for any third-party content or services</li>
@@ -128,7 +128,7 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">9. Changes to Service</h2>
                 <div className="prose prose-gray max-w-none">
                   <p className="text-gray-600">
-                    We reserve the right to modify these Terms and our Services at any time. We will notify users of any material changes by posting the new Terms on this page and updating the "Last Updated" date. Your continued use of the Platform after such modifications constitutes your acceptance of the new Terms.
+                    We reserve the right to modify these Terms and our Services at any time. We will notify users of any material changes by posting the new Terms on this page and updating the &quot;Last Updated&quot; date. Your continued use of the Platform after such modifications constitutes your acceptance of the new Terms.
                   </p>
                 </div>
               </section>
