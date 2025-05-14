@@ -49,7 +49,7 @@ const servicesMenu = [
 
 export default function Header() {
   return (
-    <header className="w-full max-w-[1700px] flex items-center justify-between mb-8 mt-8 relative z-10 overflow-visible">
+    <header className="w-full flex items-center justify-between mb-4 mt-4 relative z-10 overflow-visible mx-auto sm:px-12 lg:px-20">
       <div className="flex items-center gap-2 mb-4 sm:mb-0 relative w-full justify-start sm:w-auto sm:justify-start py-2 px-4">
         <div className="w-10 h-10 flex items-center justify-center rounded-xl bg-[#A78BFA]">
           <span className="font-extrabold text-xl text-white tracking-tight">T</span>
