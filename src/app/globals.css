@@ -50,7 +50,7 @@ body {
 .bg-hero-overlay {
   position: absolute;
   top: 0; left: 0; width: 100vw; height: 400px;
-  background: linear-gradient(135deg, #f9f9fb 80%, #8958fe22 100%);
+  background: linear-gradient(135deg, #f9f9fb 80%, #8958FE22 100%);
   z-index: 0;
   pointer-events: none;
 }

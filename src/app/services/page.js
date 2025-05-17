@@ -13,7 +13,7 @@ const servicesData = [
       "Web Development",
       "Mobile App Development",
       "Custom Software Solutions",
-      "API Development"
+      "API Development",
     ]
   },
   {
