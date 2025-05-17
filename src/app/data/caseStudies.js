@@ -197,26 +197,4 @@ export const caseStudies = [
       }
     }
   },
-  {
-    id: 10,
-    title: "Fawad New Project",
-    description: "Building a comprehensive cloud integration and management solution",
-    image: "/case-studies/plexaar.jpg",
-    category: "Cloud Solutions",
-    client: "Global Tech Services",
-    duration: "18 months",
-    results: ["99.9% Uptime", "70% Faster Deployment", "Seamless Integration"],
-    content: {
-      overview: "Global Tech Services needed a robust cloud integration platform to manage their multi-cloud infrastructure and streamline application deployment. They required a solution that could handle complex cloud environments while ensuring security and scalability.",
-      challenge: "The project faced several challenges:\n\n• Complex multi-cloud environment\n• Inconsistent deployment processes\n• Security and compliance requirements\n• Integration with legacy systems\n• Performance optimization needs\n• Resource management complexity",
-      solution: "We developed the Plexaar platform:\n\n• Created unified cloud management interface\n• Implemented automated deployment pipelines\n• Developed advanced security controls\n• Built real-time monitoring and analytics\n• Integrated with major cloud providers\n• Implemented resource optimization",
-      results: "The solution achieved remarkable results:\n\n• 99.9% platform uptime\n• 70% faster application deployment\n• Seamless multi-cloud integration\n• 50% reduction in operational costs\n• Enhanced security compliance\n• Improved resource utilization",
-      technologies: ["AWS", "Azure", "Google Cloud", "Kubernetes", "Terraform", "React"],
-      testimonial: {
-        quote: "Plexaar has revolutionized our cloud operations. The platform's ability to manage complex cloud environments while ensuring security and efficiency has been game-changing.",
-        author: "Michael Chang",
-        position: "Cloud Architect, Global Tech Services"
-      }
-    }
-  }
 ]; 
