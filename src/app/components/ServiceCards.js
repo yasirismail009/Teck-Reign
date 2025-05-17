@@ -39,17 +39,17 @@ const FinancialServicesCard = () => (
     }}
   >
     <div>
-      <h3 className="text-white font-bold text-[2.3rem] leading-tight mb-8">Tech Services</h3>
-      <div className="relative h-[180px] mb-8">
+      <h2 className="text-white font-bold text-[2.3rem] leading-tight mb-8">Tech Services</h2>
+      <div className="relative h-[180px] mb-8" role="list" aria-label="Technology services">
         {/* Staggered, overlapping chips */}
-        <span className="absolute left-0 top-0 bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-10deg]">Cloud Solutions</span>
-        <span className="absolute left-[120px] top-[30px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[8deg]">AI Development</span>
-        <span className="absolute left-[10px] top-[60px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-5deg]">Web Development</span>
-        <span className="absolute left-[160px] top-[80px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[12deg]">Mobile Apps</span>
-        <span className="absolute left-[60px] top-[110px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-7deg]">DevOps</span>
-        <span className="absolute left-[200px] top-[130px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[6deg]">UI/UX Design</span>
-        <span className="absolute left-[20px] top-[150px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-8deg]">Cybersecurity</span>
-        <span className="absolute left-[180px] top-[160px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[10deg]">Data Analytics</span>
+        <span className="absolute left-0 top-0 bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-10deg]" role="listitem">Cloud Solutions</span>
+        <span className="absolute left-[120px] top-[30px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[8deg]" role="listitem">AI Development</span>
+        <span className="absolute left-[10px] top-[60px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-5deg]" role="listitem">Web Development</span>
+        <span className="absolute left-[160px] top-[80px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[12deg]" role="listitem">Mobile Apps</span>
+        <span className="absolute left-[60px] top-[110px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-7deg]" role="listitem">DevOps</span>
+        <span className="absolute left-[200px] top-[130px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[6deg]" role="listitem">UI/UX Design</span>
+        <span className="absolute left-[20px] top-[150px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-8deg]" role="listitem">Cybersecurity</span>
+        <span className="absolute left-[180px] top-[160px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[10deg]" role="listitem">Data Analytics</span>
       </div>
     </div>
     <div className="mt-auto">
@@ -69,7 +69,7 @@ const ClientsServedCard = () => (
   >
     {/* Image with badge */}
     <div className="relative w-full h-[120px] rounded-t-[32px] overflow-hidden">
-      <TechCircuitSVG className="w-full h-full" width={350} height={350}/>
+      <TechCircuitSVG className="w-full h-full" width={350} height={350} aria-label="Technology circuit pattern"/>
       <div className="absolute top-3 right-5 text-xs text-white bg-[#888]/80 px-4 py-1 rounded-full tracking-wide font-semibold">2024 - 2025</div>
     </div>
     {/* Main Stat */}
@@ -78,7 +78,7 @@ const ClientsServedCard = () => (
       <span className="text-[#8958FE] text-lg opacity-70 mb-8 font-semibold">Clients Served</span>
       {/* Info Box */}
       <div className="rounded-2xl p-5 w-full max-w-[220px] mx-auto mt-4 bg-[#8958FE] text-white shadow-lg">
-        <div className="font-semibold text-base mb-2">Our Impact</div>
+        <h3 className="font-semibold text-base mb-2">Our Impact</h3>
         <div className="flex flex-col gap-1 text-sm">
           <span className="opacity-90"><b className="text-white text-lg">200+</b> Strategic Campaigns</span>
           <span className="opacity-90"><b className="text-white text-lg">7+</b> Years of Excellence</span>
@@ -320,13 +320,8 @@ const GlobalDeliveryCard = () => (
 
 export default function ServiceCards() {
   return (
-    <div className=" lg:block md:block sm:hidden hidden relative w-full mx-auto rounded-3xl px-4 sm:px-12 pt-8 pb-12" style={{zoom:'90%'}}>
-      <div
-        className="flex overflow-x-auto flex-nowrap sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 sm:gap-4 lg:gap-6"
-        style={{
-          gridTemplateRows: 'auto',
-        }}
-      >
+    <section className="py-16" aria-label="Our services">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
         <FinancialServicesCard />
         <ClientsServedCard />
         <StrategicServicesCard />
@@ -337,6 +332,6 @@ export default function ServiceCards() {
         <TeamCultureCard />
         <GlobalDeliveryCard />
       </div>
-    </div>
+    </section>
   );
 } 
