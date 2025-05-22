@@ -320,7 +320,7 @@ const GlobalDeliveryCard = () => (
 
 export default function ServiceCards() {
   return (
-    <section className="py-16" aria-label="Our services">
+    <section className="py-16 lg:block md:hidden sm:hidden hidden" aria-label="Our services">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
         <FinancialServicesCard />
         <ClientsServedCard />
