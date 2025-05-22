@@ -3,6 +3,6 @@
   <rect x="10" y="10" width="40" height="40" rx="4" fill="#8E51FF" />
   <text x="30" y="35" font-family="Arial, sans-serif" font-size="26" font-weight="bold" fill="white" text-anchor="middle" dominant-baseline="middle">T</text>
   
-  <!-- TECKREIGN text -->
-  <text x="68" y="36" font-family="Arial Black, Arial, sans-serif" font-size="18" font-weight="900" fill="#000000" letter-spacing="0.5">TECKREIGN</text>
+  <!-- TEKREIGN text -->
+  <text x="68" y="36" font-family="Arial Black, Arial, sans-serif" font-size="18" font-weight="900" fill="#000000" letter-spacing="0.5">TEKREIGN</text>
 </svg>

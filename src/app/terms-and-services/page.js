@@ -16,10 +16,10 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
                 <div className="prose prose-gray max-w-none">
                   <p className="text-gray-600 mb-4">
-                    Welcome to TeckReign&apos;s Terms of Service. This agreement outlines the terms and conditions for using our services. By accessing or using our platform, you agree to be bound by these terms. Please read them carefully before proceeding.
+                    Welcome to TekReign&apos;s Terms of Service. This agreement outlines the terms and conditions for using our services. By accessing or using our platform, you agree to be bound by these terms. Please read them carefully before proceeding.
                   </p>
                   <p className="text-gray-600">
-                    These terms form a legally binding agreement between you and TeckReign. If you do not agree with any part of these terms, you may not use our services.
+                    These terms form a legally binding agreement between you and TekReign. If you do not agree with any part of these terms, you may not use our services.
                   </p>
                 </div>
               </section>
@@ -28,11 +28,11 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">2. Definitions</h2>
                 <div className="prose prose-gray max-w-none">
                   <ul className="list-disc pl-6 text-gray-600 space-y-2">
-                    <li>&quot;Platform&quot; refers to TeckReign&apos;s website and all associated services</li>
+                    <li>&quot;Platform&quot; refers to TekReign&apos;s website and all associated services</li>
                     <li>&quot;User&quot; refers to any individual or entity using our Platform</li>
                     <li>&quot;Content&quot; refers to all materials, information, and data available through our Platform</li>
                     <li>&quot;Account&quot; refers to a user&apos;s registration with our Platform</li>
-                    <li>&quot;Services&quot; refers to all features, functionality, and offerings provided by TeckReign</li>
+                    <li>&quot;Services&quot; refers to all features, functionality, and offerings provided by TekReign</li>
                   </ul>
                 </div>
               </section>
@@ -74,7 +74,7 @@ const TermsOfService = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">5. Intellectual Property</h2>
                 <div className="prose prose-gray max-w-none">
                   <p className="text-gray-600 mb-4">
-                    All content, features, and functionality of our Platform are owned by TeckReign and are protected by international copyright, trademark, and other intellectual property laws. You may not:
+                    All content, features, and functionality of our Platform are owned by TekReign and are protected by international copyright, trademark, and other intellectual property laws. You may not:
                   </p>
                   <ul className="list-disc pl-6 text-gray-600 space-y-2">
                     <li>Copy or modify any part of our Platform</li>
@@ -149,7 +149,7 @@ const TermsOfService = () => {
                     If you have any questions about these Terms of Service, please contact us at:
                   </p>
                   <div className="bg-gray-50 rounded-lg p-6 space-y-3">
-                    <p className="text-gray-700">Email: legal@teckreign.com</p>
+                    <p className="text-gray-700">Email: legal@tekreign.com</p>
                     <p className="text-gray-700">Phone: [Your Phone Number]</p>
                     <p className="text-gray-700">Address: [Your Business Address]</p>
                   </div>

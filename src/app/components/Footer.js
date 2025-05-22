@@ -10,7 +10,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
-            <h3 className="text-xl font-bold">TechReign</h3>
+            <h3 className="text-xl font-bold">TekReign</h3>
             <p className="text-gray-300 text-sm leading-relaxed">
               Empowering businesses with innovative technology solutions for a digital future.
             </p>
@@ -109,7 +109,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <span className="text-sm text-gray-300">© 2024 TechReign. All Rights Reserved</span>
+            <span className="text-sm text-gray-300">© 2025 TekReign. All Rights Reserved</span>
             <div className="flex gap-8 text-sm">
               <Link href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">
                 Privacy Policy

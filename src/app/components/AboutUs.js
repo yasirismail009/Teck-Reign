@@ -49,7 +49,7 @@ export default function AboutUs() {
       <div className="text-lg sm:text-xl font-semibold tracking-wider text-gray-500 mb-4 sm:mb-6">/ABOUT US</div>
       <div className="mb-8 sm:mb-12">
         <h2 className="text-xl sm:text-2xl md:text-4xl lg:text-5xl font-light text-gray-400 mb-2 leading-tight">
-          TeckReign is a <span className="font-bold text-gray-900">Next-Generation Technology Agency</span> founded to <span className="font-bold text-gray-900">Pioneer a New Era of Digital Innovation</span>, as it broadly combines all the skills, talents and tools used by <span className="font-bold text-gray-900">Modern Technology Systems</span>, & modern or renewed brands.
+          TekReign is a <span className="font-bold text-gray-900">Next-Generation Technology Agency</span> founded to <span className="font-bold text-gray-900">Pioneer a New Era of Digital Innovation</span>, as it broadly combines all the skills, talents and tools used by <span className="font-bold text-gray-900">Modern Technology Systems</span>, & modern or renewed brands.
         </h2>
       </div>
       <div className="flex overflow-x-auto lg:flex-row md:flex-row sm:flex-col flex-col justify-start sm:justify-between items-center gap-4 sm:gap-8 mb-8 sm:mb-16 px-2 scrollbar-hide" role="list" aria-label="Our key features">

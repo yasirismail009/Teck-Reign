@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
 export const metadata = {
-  title: 'About Us - TeckReign',
-  description: 'Learn about TeckReign - Our mission, vision, and the team behind innovative technology solutions.',
+  title: 'About Us - TekReign',
+  description: 'Learn about TekReign - Our mission, vision, and the team behind innovative technology solutions.',
 };
 
 export default function AboutUs() {
@@ -12,7 +12,7 @@ export default function AboutUs() {
       <section className="relative py-20 bg-[var(--color-primary)] text-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-6">About TeckReign</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6">About TekReign</h1>
             <p className="text-xl md:text-2xl opacity-90">
               Empowering businesses through innovative technology solutions
             </p>

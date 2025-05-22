@@ -14,32 +14,49 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "TeckReign - Innovative Technology Solutions & Digital Transformation Experts",
-  description: "TeckReign delivers cutting-edge technology solutions, custom software development, and digital transformation services. Expert in web development, mobile apps, cloud solutions, and enterprise software.",
+  title: "TekReign - Innovative Technology Solutions & Digital Transformation Experts",
+  description: "TekReign delivers cutting-edge technology solutions, custom software development, and digital transformation services. Expert in web development, mobile apps, cloud solutions, and enterprise software.",
   keywords: "technology solutions, software development, digital transformation, web development, mobile apps, cloud solutions, enterprise software, IT consulting, custom software, tech innovation",
-  authors: [{ name: 'TeckReign' }],
-  creator: 'TeckReign',
-  publisher: 'TeckReign',
+  authors: [{ name: 'TekReign' }],
+  creator: 'TekReign',
+  publisher: 'TekReign',
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: '48x48' },
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
+    ],
+    apple: [
+      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
+    ],
+    other: [
+      {
+        rel: 'mask-icon',
+        url: '/favicon.svg',
+      },
+    ],
+  },
+  manifest: '/site.webmanifest',
   formatDetection: {
     email: false,
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://teckreign.com'),
+  metadataBase: new URL('https://tekreign.com'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
-    title: 'TeckReign - Innovative Technology Solutions & Digital Transformation Experts',
-    description: 'Transform your business with TeckReign\'s cutting-edge technology solutions, custom software development, and digital transformation services.',
-    url: 'https://teckreign.com',
-    siteName: 'TeckReign',
+    title: 'TekReign - Innovative Technology Solutions & Digital Transformation Experts',
+    description: 'Transform your business with TekReign\'s cutting-edge technology solutions, custom software development, and digital transformation services.',
+    url: 'https://tekreign.com',
+    siteName: 'TekReign',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'TeckReign - Technology Solutions',
+        alt: 'TekReign - Technology Solutions',
       },
     ],
     locale: 'en_US',
@@ -47,10 +64,10 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TeckReign - Innovative Technology Solutions',
-    description: 'Transform your business with TeckReign\'s cutting-edge technology solutions and digital transformation services.',
+    title: 'TekReign - Innovative Technology Solutions',
+    description: 'Transform your business with TekReign\'s cutting-edge technology solutions and digital transformation services.',
     images: ['/twitter-image.jpg'],
-    creator: '@teckreign',
+    creator: '@tekreign',
   },
   robots: {
     index: true,

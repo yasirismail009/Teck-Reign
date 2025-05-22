@@ -15,7 +15,7 @@ export const caseStudies = [
       results: "The transformation delivered exceptional results:\n\n• 200% increase in revenue within the first year\n• 50% reduction in operational costs\n• 75% decrease in cart abandonment rate\n• 99.9% system uptime during peak seasons\n• 40% increase in customer satisfaction scores\n• 3x faster page load times",
       technologies: ["Next.js", "Node.js", "AWS", "MongoDB", "Redis", "TensorFlow"],
       testimonial: {
-        quote: "The digital transformation led by Teckreign has completely revolutionized our business. The new platform has not only improved our operational efficiency but also significantly enhanced our customer experience.",
+        quote: "The digital transformation led by TekReign has completely revolutionized our business. The new platform has not only improved our operational efficiency but also significantly enhanced our customer experience.",
         author: "Sarah Johnson",
         position: "CTO, Global Retail Corp"
       }

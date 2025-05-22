@@ -17,14 +17,14 @@ export default function Home() {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Organization",
-            "name": "TeckReign",
-            "url": "https://teckreign.com",
-            "logo": "https://teckreign.com/logo.png",
-            "description": "TeckReign delivers cutting-edge technology solutions, custom software development, and digital transformation services.",
+            "name": "TekReign",
+            "url": "https://tekreign.com",
+            "logo": "https://tekreign.com/logo.png",
+            "description": "TekReign delivers cutting-edge technology solutions, custom software development, and digital transformation services.",
             "sameAs": [
-              "https://www.linkedin.com/company/teckreign",
-              "https://twitter.com/teckreign",
-              "https://www.facebook.com/teckreign"
+              "https://www.linkedin.com/company/tekreign",
+              "https://twitter.com/tekreign",
+              "https://www.facebook.com/tekreign"
             ],
             "contactPoint": {
               "@type": "ContactPoint",

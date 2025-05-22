@@ -16,7 +16,7 @@ const PrivacyPolicy = () => {
                 <h2 className="text-2xl font-semibold text-gray-900 mb-4">1. Introduction</h2>
                 <div className="prose prose-gray max-w-none">
                   <p className="text-gray-600 mb-4">
-                    Welcome to TeckReign&apos;s Privacy Policy. This document outlines how we collect, use, and protect your personal information when you use our website and services. We are committed to ensuring that your privacy is protected and that we comply with all applicable data protection laws and regulations.
+                    Welcome to TekReign&apos;s Privacy Policy. This document outlines how we collect, use, and protect your personal information when you use our website and services. We are committed to ensuring that your privacy is protected and that we comply with all applicable data protection laws and regulations.
                   </p>
                   <p className="text-gray-600">
                     By using our website and services, you consent to the collection and use of information in accordance with this policy. We may update this policy from time to time, and any changes will be posted on this page.
@@ -195,7 +195,7 @@ const PrivacyPolicy = () => {
                     If you have any questions, concerns, or requests regarding this Privacy Policy or our data practices, please contact us at:
                   </p>
                   <div className="bg-gray-50 rounded-lg p-6 space-y-3">
-                    <p className="text-gray-700">Email: privacy@teckreign.com</p>
+                    <p className="text-gray-700">Email: privacy@tekreign.com</p>
                     <p className="text-gray-700">Phone: [Your Phone Number]</p>
                     <p className="text-gray-700">Address: [Your Business Address]</p>
                     <p className="text-gray-700">Data Protection Officer: [DPO Name]</p>

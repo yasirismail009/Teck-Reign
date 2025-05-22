@@ -401,10 +401,10 @@ const servicesData = {
 
 export default function ServicePage() {
   const params = useParams();
+  const searchParams = useSearchParams();
   const category = params.category;
   const serviceData = servicesData[category];
-  const [searchParams] = useSearchParams();
-  const section = searchParams.get('section');
+  const section = searchParams?.get('section');
 
   useEffect(() => {
     if (section) {
@@ -428,7 +428,7 @@ export default function ServicePage() {
       <div className="max-w-[90rem] mx-auto px-6 sm:px-8 lg:px-12">
 
         {/* Header Section */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-16">
           <h1 className="mb-3">
             <span className="block text-3xl sm:text-5xl md:text-6xl font-light text-gray-400" style={{ letterSpacing: '-0.02em' }}>
               {serviceData.title}
