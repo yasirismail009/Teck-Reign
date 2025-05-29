@@ -1,6 +1,7 @@
 'use client'
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import Image from 'next/image';
+import emailjs from '@emailjs/browser';
 
 const services = [
   {
@@ -26,15 +27,49 @@ const services = [
 export default function ContactUsPage() {
   const [selectedService, setSelectedService] = useState(0);
   const [form, setForm] = useState({ firstName: '', lastName: '', email: '', phone: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState({ type: '', message: '' });
+  const formRef = useRef();
 
   const handleChange = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // TODO: Implement form submission logic
-    alert('Form submitted!');
+    setIsSubmitting(true);
+    setSubmitStatus({ type: '', message: '' });
+
+    try {
+      const templateParams = {
+        name: `${form.firstName} ${form.lastName}`,
+        email: form.email,
+        phone: form.phone,
+        message: form.message,
+        service_type: services[selectedService].label,
+      };
+
+      await emailjs.send(
+        'service_57tsk0v', // Replace with your EmailJS service ID
+        'template_uk20ewn', // Replace with your EmailJS template ID
+        templateParams,
+        'user_3TDjSAtSwwjQiWplcCN3R' // Replace with your EmailJS public key
+      );
+
+      setSubmitStatus({
+        type: 'success',
+        message: 'Thank you for your message! We will get back to you soon.'
+      });
+      setForm({ firstName: '', lastName: '', email: '', phone: '', message: '' });
+      setSelectedService(0);
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: 'Sorry, there was an error sending your message. Please try again.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -62,7 +97,7 @@ export default function ContactUsPage() {
                 ))}
               </div>
             </div>
-            <form className="space-y-4" onSubmit={handleSubmit} autoComplete="off">
+            <form ref={formRef} className="space-y-4" onSubmit={handleSubmit} autoComplete="off">
               <div className="flex flex-col sm:flex-row gap-3">
                 <input
                   type="text"
@@ -108,11 +143,21 @@ export default function ContactUsPage() {
                 onChange={handleChange}
                 required
               />
+              {submitStatus.message && (
+                <div className={`p-3 rounded-lg text-sm ${
+                  submitStatus.type === 'success' ? 'bg-green-50 text-green-700' : 'bg-red-50 text-red-700'
+                }`}>
+                  {submitStatus.message}
+                </div>
+              )}
               <button
                 type="submit"
-                className="w-full bg-[#8958FE] hover:bg-[#6C3DFE] text-white font-bold rounded-xl py-3 mt-2 transition-all text-base shadow-md tracking-wide"
+                disabled={isSubmitting}
+                className={`w-full bg-[#8958FE] hover:bg-[#6C3DFE] text-white font-bold rounded-xl py-3 mt-2 transition-all text-base shadow-md tracking-wide ${
+                  isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
+                }`}
               >
-                Submit
+                {isSubmitting ? 'Sending...' : 'Submit'}
               </button>
             </form>
           </div>
