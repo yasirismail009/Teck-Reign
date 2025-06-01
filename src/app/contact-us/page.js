@@ -180,12 +180,9 @@ export default function ContactUsPage() {
             </div>
             <div className="mb-6 md:mb-7">
               <div className="font-semibold text-sm md:text-base mb-1">Our Address</div>
-              <div className="text-xs md:text-sm leading-relaxed">8520 Preston Rd. Ingle, Maine<br />4102914, USA</div>
+              <div className="text-xs md:text-sm leading-relaxed">420 Decker Dr., Suite #114<br />Irving, TX 75062, USA</div>
             </div>
-            <div>
-              <div className="font-semibold text-sm md:text-base mb-1">Get In Touch</div>
-              <div className="text-xs md:text-sm leading-relaxed">+1 554 058 3808<br />+1 157 057 9987</div>
-            </div>
+           
           </div>
         </div>
       </div>
