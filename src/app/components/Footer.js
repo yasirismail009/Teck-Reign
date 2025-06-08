@@ -45,13 +45,13 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/portfolio" className="text-gray-300 hover:text-white transition-colors">
-                  Portfolio
+                <Link href="/case-studies" className="text-gray-300 hover:text-white transition-colors">
+                  Case Studies
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
-                  Contact
+                <Link href="/contact-us" className="text-gray-300 hover:text-white transition-colors">
+                  Contact Us
                 </Link>
               </li>
             </ul>
@@ -62,25 +62,21 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Our Services</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/web-development" className="text-gray-300 hover:text-white transition-colors">
-                  Web Development
+                <Link href="/services/software-development" className="text-gray-300 hover:text-white transition-colors">
+                 Software Development
                 </Link>
               </li>
               <li>
-                <Link href="/mobile-apps" className="text-gray-300 hover:text-white transition-colors">
-                  Mobile Apps
+                <Link href="/services/digital-marketing" className="text-gray-300 hover:text-white transition-colors">
+                  Digital Marketing
                 </Link>
               </li>
               <li>
-                <Link href="/cloud-solutions" className="text-gray-300 hover:text-white transition-colors">
-                  Cloud Solutions
+                <Link href="/services/design-ux" className="text-gray-300 hover:text-white transition-colors">
+                UI/UX Design
                 </Link>
               </li>
-              <li>
-                <Link href="/consulting" className="text-gray-300 hover:text-white transition-colors">
-                  IT Consulting
-                </Link>
-              </li>
+             
             </ul>
           </div>
 
