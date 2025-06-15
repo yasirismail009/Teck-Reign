@@ -67,8 +67,21 @@ export default function CaseStudy({ params }) {
   return (
     <main className="min-h-screen bg-[#F9F9FB]">
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)] py-32">
-        <div className="absolute inset-0 bg-black/30" />
+      <section className="relative py-32">
+        {caseStudy.image ? (
+          <>
+            <Image
+              src={caseStudy.image}
+              alt={caseStudy.title}
+              fill
+              className="object-cover"
+              priority
+            />
+            <div className="absolute inset-0 bg-black/50" />
+          </>
+        ) : (
+          <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-primary)] to-[var(--color-primary-dark)]" />
+        )}
         <div className="relative z-10 max-w-7xl mx-auto px-4">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
@@ -126,7 +139,7 @@ export default function CaseStudy({ params }) {
           </div>
         </div>
 
-        {/* Image Carousel */}
+        {/* Image Gallery */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold mb-8 text-[#1A2341]">Project Gallery</h2>
           {isLoading ? (
@@ -134,52 +147,23 @@ export default function CaseStudy({ params }) {
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
             </div>
           ) : (
-            <div className="relative max-w-4xl mx-auto">
-              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg flex items-center justify-center">
-                <Image
-                  src={images[currentIndex]}
-                  alt={`${caseStudy.title} - Image ${currentIndex + 1}`}
-                  width={800}
-                  height={450}
-                  className="object-contain max-w-full max-h-full"
-                  priority
-                />
-              </div>
-              
-              {/* Navigation Buttons */}
-              <button
-                onClick={prevSlide}
-                className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg transition-colors"
-              >
-                <ArrowLeft className="w-6 h-6" />
-              </button>
-              <button
-                onClick={nextSlide}
-                className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg transition-colors"
-              >
-                <ArrowRight className="w-6 h-6" />
-              </button>
-
-              {/* Thumbnail Navigation */}
-              <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
-                {images.map((image, index) => (
-                  <button
-                    key={image}
-                    onClick={() => setCurrentIndex(index)}
-                    className={`relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 transition-opacity ${
-                      index === currentIndex ? 'ring-2 ring-blue-500' : 'opacity-60 hover:opacity-100'
-                    }`}
-                  >
-                    <Image
-                      src={image}
-                      alt={`Thumbnail ${index + 1}`}
-                      width={200}
-                      height={200}
-                      className="object-cover"
-                    />
-                  </button>
-                ))}
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              {images.map((image, index) => (
+                <motion.div
+                  key={image}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: 0.1 * index }}
+                  className="relative aspect-video rounded-lg overflow-hidden shadow-lg group"
+                >
+                  <Image
+                    src={image}
+                    alt={`${caseStudy.title} - Image ${index + 1}`}
+                    fill
+                    className="object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                </motion.div>
+              ))}
             </div>
           )}
         </div>
