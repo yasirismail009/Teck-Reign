@@ -123,10 +123,20 @@ export default function CaseStudies() {
                 >
                   <div className="relative w-full h-48 mb-4 rounded-lg overflow-hidden">
                     <div className="w-full h-full">
-                      <PlaceholderImage 
-                        category={study.category}
-                        title={study.title}
-                      />
+                      {study.image ? (
+                        <Image
+                          src={study.image}
+                          alt={study.title}
+                          fill
+                          className="object-cover"
+                          priority
+                        />
+                      ) : (
+                        <PlaceholderImage 
+                          category={study.category}
+                          title={study.title}
+                        />
+                      )}
                     </div>
                   </div>
                   <div className="px-8">
@@ -208,4 +218,4 @@ export default function CaseStudies() {
       </section>
     </main>
   );
-} 
+}

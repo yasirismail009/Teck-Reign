@@ -6,9 +6,42 @@ import { notFound } from 'next/navigation';
 import { caseStudies } from '../../data/caseStudies';
 import { motion } from 'framer-motion';
 import { FaChartLine, FaUsers, FaClock, FaDollarSign, FaChartBar, FaLightbulb } from 'react-icons/fa';
+import { useState, useEffect, useCallback } from 'react';
+import { useRouter } from 'next/navigation';
+import { ArrowLeft, ArrowRight } from 'lucide-react';
+import PlaceholderImage from '@/app/components/PlaceholderImage';
 
 export default function CaseStudy({ params }) {
   const caseStudy = caseStudies.find(study => study.id === parseInt(params.id));
+  const [images, setImages] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const router = useRouter();
+
+  useEffect(() => {
+    if (caseStudy?.detail_images) {
+      setImages(caseStudy.detail_images);
+      setIsLoading(false);
+    }
+  }, [caseStudy]);
+
+  const nextSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === images.length - 1 ? 0 : prevIndex + 1
+    );
+  }, [images.length]);
+
+  const prevSlide = useCallback(() => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? images.length - 1 : prevIndex - 1
+    );
+  }, [images.length]);
+
+  // Auto-advance slides every 5 seconds
+  useEffect(() => {
+    const timer = setInterval(nextSlide, 5000);
+    return () => clearInterval(timer);
+  }, [nextSlide]);
 
   if (!caseStudy) {
     notFound();
@@ -93,21 +126,63 @@ export default function CaseStudy({ params }) {
           </div>
         </div>
 
-        {/* Main Image */}
-        {/* <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="relative h-[500px] mb-20 rounded-2xl overflow-hidden shadow-xl"
-        >
-          <Image
-            src={caseStudy.image}
-            alt={caseStudy.title}
-            fill
-            className="object-cover"
-            priority
-          />
-        </motion.div> */}
+        {/* Image Carousel */}
+        <div className="mb-20">
+          <h2 className="text-3xl font-bold mb-8 text-[#1A2341]">Project Gallery</h2>
+          {isLoading ? (
+            <div className="flex justify-center items-center h-64">
+              <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
+            </div>
+          ) : (
+            <div className="relative max-w-4xl mx-auto">
+              <div className="relative aspect-video rounded-lg overflow-hidden shadow-lg flex items-center justify-center">
+                <Image
+                  src={images[currentIndex]}
+                  alt={`${caseStudy.title} - Image ${currentIndex + 1}`}
+                  width={800}
+                  height={450}
+                  className="object-contain max-w-full max-h-full"
+                  priority
+                />
+              </div>
+              
+              {/* Navigation Buttons */}
+              <button
+                onClick={prevSlide}
+                className="absolute left-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg transition-colors"
+              >
+                <ArrowLeft className="w-6 h-6" />
+              </button>
+              <button
+                onClick={nextSlide}
+                className="absolute right-4 top-1/2 -translate-y-1/2 p-2 bg-white/80 hover:bg-white rounded-full shadow-lg transition-colors"
+              >
+                <ArrowRight className="w-6 h-6" />
+              </button>
+
+              {/* Thumbnail Navigation */}
+              <div className="flex gap-2 mt-4 overflow-x-auto pb-2">
+                {images.map((image, index) => (
+                  <button
+                    key={image}
+                    onClick={() => setCurrentIndex(index)}
+                    className={`relative w-20 h-20 rounded-lg overflow-hidden flex-shrink-0 transition-opacity ${
+                      index === currentIndex ? 'ring-2 ring-blue-500' : 'opacity-60 hover:opacity-100'
+                    }`}
+                  >
+                    <Image
+                      src={image}
+                      alt={`Thumbnail ${index + 1}`}
+                      width={200}
+                      height={200}
+                      className="object-cover"
+                    />
+                  </button>
+                ))}
+              </div>
+            </div>
+          )}
+        </div>
 
         {/* Key Results */}
         <motion.div 

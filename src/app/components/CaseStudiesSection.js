@@ -26,10 +26,21 @@ export default function CaseStudiesSection() {
         {/* Left Card */}
         <div className="flex-1 flex flex-col items-start bg-[#101C3A] rounded-3xl overflow-hidden shadow-lg max-w-sm">
           <div className="w-full h-64 overflow-hidden">
-            <PlaceholderImage 
-              category={featuredStudies[0].category}
-              title={featuredStudies[0].title}
-            />
+            {featuredStudies[0].image ? (
+              <Image
+                src={featuredStudies[0].image}
+                alt={featuredStudies[0].title}
+                width={400}
+                height={400}
+                className="object-cover"
+                priority
+              />
+            ) : (
+              <PlaceholderImage 
+                category={featuredStudies[0].category}
+                title={featuredStudies[0].title}
+              />
+            )}
           </div>
           <div className="p-6">
             <span className="text-xs font-semibold text-[#A084FE] uppercase tracking-wide mb-2 block">{featuredStudies[0].category}</span>
@@ -59,10 +70,21 @@ export default function CaseStudiesSection() {
         {/* Right Card */}
         <div className="flex-1 flex flex-col items-start bg-[#101C3A] rounded-3xl overflow-hidden shadow-lg max-w-sm">
           <div className="w-full h-64 overflow-hidden">
+          {featuredStudies[1].image ? (
+                        <Image
+                          src={featuredStudies[1].image}
+                          alt={featuredStudies[1].title}
+                          width={400}
+                          height={400}
+                          className="object-cover"
+                          priority
+                        />
+                      ) : (
             <PlaceholderImage 
               category={featuredStudies[1].category}
               title={featuredStudies[1].title}
             />
+            )}
           </div>
           <div className="p-6">
             <span className="text-xs font-semibold text-[#A084FE] uppercase tracking-wide mb-2 block">{featuredStudies[1].category}</span>
