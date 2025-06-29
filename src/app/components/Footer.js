@@ -21,7 +21,7 @@ export default function Footer() {
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <FaTwitter size={20} />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
+              <a href="https://www.linkedin.com/company/tek-reign" rel="noopener noreferrer" target="_blank" className="text-gray-300 hover:text-white transition-colors">
                 <FaLinkedin size={20} />
               </a>
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
@@ -35,7 +35,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <Link href="/about" className="text-gray-300 hover:text-white transition-colors">
+                <Link href="/about-us" className="text-gray-300 hover:text-white transition-colors">
                   About Us
                 </Link>
               </li>

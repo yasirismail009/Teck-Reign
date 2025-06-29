@@ -177,7 +177,7 @@ export default function ContactUsPage() {
             <div className="mb-6 md:mb-7">
               <div className="font-semibold text-sm md:text-base mb-1">Office Hours</div>
               <div className="text-xs md:text-sm leading-relaxed">Monday - Friday<br />8:00 am to 5:00 pm</div>
-              <div className="text-xs md:text-sm leading-relaxed">Phone Number<br />6824518781</div>
+              {/* <div className="text-xs md:text-sm leading-relaxed">Phone Number<br /></div> */}
             </div>
             <div className="mb-6 md:mb-7">
               <div className="font-semibold text-sm md:text-base mb-1">Our Address</div>

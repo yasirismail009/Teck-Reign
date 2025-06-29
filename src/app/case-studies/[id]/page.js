@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { caseStudies } from '../../data/caseStudies';
 import { motion } from 'framer-motion';
-import { FaChartLine, FaUsers, FaClock, FaDollarSign, FaChartBar, FaLightbulb } from 'react-icons/fa';
+import { FaChartLine, FaUsers, FaClock, FaDollarSign, FaChartBar, FaLightbulb, FaPlay } from 'react-icons/fa';
 import { useState, useEffect, useCallback } from 'react';
 import { useRouter } from 'next/navigation';
 import { ArrowLeft, ArrowRight } from 'lucide-react';
@@ -16,6 +16,7 @@ export default function CaseStudy({ params }) {
   const [images, setImages] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [showVideo, setShowVideo] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -62,6 +63,15 @@ export default function CaseStudy({ params }) {
   const extractMetrics = (result) => {
     const metrics = result.match(/\d+(?:\.\d+)?%/g) || [];
     return metrics;
+  };
+
+  // Helper function to convert Google Drive link to embed format
+  const getEmbedUrl = (url) => {
+    if (url.includes('drive.google.com')) {
+      const fileId = url.match(/\/d\/([a-zA-Z0-9-_]+)/)?.[1];
+      return fileId ? `https://drive.google.com/file/d/${fileId}/preview` : url;
+    }
+    return url;
   };
 
   return (
@@ -139,6 +149,50 @@ export default function CaseStudy({ params }) {
           </div>
         </div>
 
+        {/* Video Section */}
+        {caseStudy.video_link && (
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.4 }}
+            className="mb-20"
+          >
+            <h2 className="text-3xl font-bold mb-8 text-[#1A2341]">Project Video</h2>
+            <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+              <div className="relative aspect-video rounded-lg overflow-hidden">
+                {showVideo ? (
+                  <iframe
+                    src={getEmbedUrl(caseStudy.video_link)}
+                    title={`${caseStudy.title} - Project Video`}
+                    className="w-full h-full"
+                    frameBorder="0"
+                    allowFullScreen
+                  />
+                ) : (
+                  <div className="relative w-full h-full bg-gray-900 flex items-center justify-center group cursor-pointer" onClick={() => setShowVideo(true)}>
+                    {caseStudy.image && (
+                      <Image
+                        src={caseStudy.image}
+                        alt={caseStudy.title}
+                        fill
+                        className="object-cover opacity-50"
+                      />
+                    )}
+                    <div className="absolute inset-0 bg-black/30 flex items-center justify-center">
+                      <div className="bg-white/20 backdrop-blur-sm rounded-full p-6 group-hover:bg-white/30 transition-all duration-300">
+                        <FaPlay className="w-12 h-12 text-white" />
+                      </div>
+                    </div>
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <p className="text-lg font-semibold">Click to watch project video</p>
+                    </div>
+                  </div>
+                )}
+              </div>
+            </div>
+          </motion.div>
+        )}
+
         {/* Image Gallery */}
         <div className="mb-20">
           <h2 className="text-3xl font-bold mb-8 text-[#1A2341]">Project Gallery</h2>
@@ -146,7 +200,7 @@ export default function CaseStudy({ params }) {
             <div className="flex justify-center items-center h-64">
               <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-gray-900"></div>
             </div>
-          ) : (
+          ) : images.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {images.map((image, index) => (
                 <motion.div
@@ -164,6 +218,10 @@ export default function CaseStudy({ params }) {
                   />
                 </motion.div>
               ))}
+            </div>
+          ) : (
+            <div className="text-center py-12">
+              <p className="text-[#7B819A] text-lg">No images available for this project.</p>
             </div>
           )}
         </div>

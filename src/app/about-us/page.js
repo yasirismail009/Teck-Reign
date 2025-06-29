@@ -99,13 +99,13 @@ export default function AboutUs() {
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[#E6E8F0]"></div>
-              <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Manshoor</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Syed Manshoor Ali</h3>
               <p className="text-[#8958FE] mb-2">Co-Founder</p>
               <p className="text-[#7B819A]">Strategic leader shaping company direction and success</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[#E6E8F0]"></div>
-              <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Wajahat</h3>
+              <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Wasif Zia</h3>
               <p className="text-[#8958FE] mb-2">Business Development Manager</p>
               <p className="text-[#7B819A]">Driving business growth and client relationships</p>
             </div>

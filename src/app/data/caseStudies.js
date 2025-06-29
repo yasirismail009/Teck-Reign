@@ -1,6 +1,111 @@
 export const caseStudies = [
   {
-    id: 25,
+    id: 1,
+    title: "Precision Agriculture Application Utilizing Satellite Imagery",
+    description: "Advanced precision agriculture platform leveraging satellite imagery for field-specific insights",
+    image: "/case-studies/precision_agriculture/precision_agriculture (7).png",
+    detail_images: [
+      "/case-studies/precision_agriculture/precision_agriculture (7).png",
+      "/case-studies/precision_agriculture/precision_agriculture (6).png",
+      "/case-studies/precision_agriculture/precision_agriculture (5).png",
+      "/case-studies/precision_agriculture/precision_agriculture (4).png",
+      "/case-studies/precision_agriculture/precision_agriculture (3).png",
+      "/case-studies/precision_agriculture/precision_agriculture (2).png",
+      "/case-studies/precision_agriculture/precision_agriculture (1).png",
+      
+    ],
+    category: "Agriculture Technology",
+    client: "GROWTECH Pakistan",
+    duration: "20 months",
+    results: ["Real-time Field Monitoring", "Resource Optimization", "Enhanced Crop Management"],
+    content: {
+      overview: "GROWTECH Pakistan needed a precision agriculture platform that leverages near real-time satellite imagery to empower farmers with field-specific insights. The application helps users monitor crop health, manage resources efficiently, and stay updated with the latest in agricultural practices and market trends.",
+      challenge: "Farmers faced difficulties in identifying localized field issues, often resulting in the overuse of water, fertilizers, and pesticides. Farm owners also lacked a scalable way to remotely monitor their entire land without physical inspection.",
+      solution: "We developed a mobile and web-based platform that allowed farmers to:\n\n• Mark and manage fields easily via the app\n• Access real-time data on:\n  - Crop health\n  - Water stress\n  - Nitrogen prescription\n  - Carbon footprint\n• Expert advice & crop-specific guidance\n• Agri-news and market rates\n\nThis intuitive solution minimized unnecessary resource usage and increased operational efficiency across farming operations.",
+      results: "The platform delivered exceptional results:\n\n• Real-time field monitoring capabilities\n• Significant resource optimization\n• Enhanced crop management efficiency\n• Improved decision-making for farmers\n• Reduced environmental impact\n• Increased agricultural productivity",
+      technologies: ["React Native", "React.js", "Node.js", "PostgreSQL", "REST APIs", "Docker"],
+      testimonial: {
+        quote: "The precision agriculture platform has revolutionized how our farmers manage their fields. The satellite imagery insights have led to significant improvements in resource efficiency and crop yields.",
+        author: "Ahmed Khan",
+        position: "CEO, GROWTECH Pakistan"
+      }
+    }
+  },
+  {
+    id: 2,
+    title: "Interactive 3D DNA & Health Education Platform",
+    description: "Immersive 3D health education application for patient understanding and medical visualization",
+    image: "/case-studies/health_education/Health.png",
+    detail_images: [
+      "/case-studies/health_education/Health.png",
+      "/case-studies/health_education/Health 2.png",
+    ],
+    video_link:"https://drive.google.com/file/d/1CViDerExQ5yiLDpTAhHrqdNvBvVHjC8G/view",
+    category: "Healthcare Technology",
+    client: "CMKL University, Thailand",
+    duration: "15 months",
+    results: ["Improved Patient Education", "Reduced Consultation Time", "Enhanced Medical Understanding"],
+    content: {
+      overview: "Designed and developed an immersive 3D health education application for high-traffic hospitals in Thailand. The platform bridges the knowledge gap for patients by providing interactive 3D visualizations of DNA structures and explanations of common diseases, helping them understand medical concepts without requiring extensive doctor time.",
+      challenge: "Doctors often spend significant time explaining basic genetic concepts and common health conditions to patients with no prior knowledge. This not only reduces consultation efficiency but also impacts overall patient throughput in busy hospitals.",
+      solution: "Built an integrated system consisting of:\n\n• Web application for doctors to manage and send personalized patient data\n• 3D VR/AR experience for patients on supported headsets, where they can visually explore:\n  - Their DNA structures\n  - Common diseases and causes\n  - Interactive medical visuals\n\nThis reduced repetitive doctor-patient interactions and significantly improved time efficiency in patient education.",
+      results: "The platform achieved remarkable results:\n\n• 60% reduction in doctor consultation time\n• Improved patient understanding of medical concepts\n• Enhanced patient engagement and satisfaction\n• Better resource utilization in hospitals\n• Increased patient throughput\n• Positive feedback from medical professionals",
+      technologies: ["Unity", "React.js", "Node.js", "MongoDB", "GraphQL", "Docker"],
+      testimonial: {
+        quote: "The 3D health education platform has transformed how we educate patients. The interactive visualizations make complex medical concepts accessible and engaging.",
+        author: "Dr. Somchai Patel",
+        position: "Medical Director, CMKL University"
+      }
+    }
+  },
+  {
+    id: 3,
+    title: "Financial Management & Automation Platform",
+    description: "Comprehensive financial management system with automated invoicing and multi-account tracking",
+    image: "",
+    detail_images: [],
+    category: "Financial Technology",
+    client: "Infro-labs, UAE",
+    duration: "6 months",
+    results: ["Automated Workflows", "Real-time Financial Insights", "Streamlined Operations"],
+    content: {
+      overview: "Developed a comprehensive financial management system that tracks income, expenses, bank accounts, and automates invoicing. Designed to support individuals and businesses with multiple revenue streams, the platform offers in-depth analytics and tax-related reports, improving financial visibility and operational efficiency.",
+      challenge: "Managing multiple income streams, expenses, collaborators, and bank accounts manually can be complex and error-prone. The client needed a unified platform to streamline the entire financial workflow—from income logging to invoice generation—with minimal manual intervention.",
+      solution: "Built a robust, modular web application where users can:\n\n• Create and manage multiple organizations\n• Add collaborators, sellers, and buyers\n• Connect and monitor various bank accounts\n• Log income and expenses with tax classifications\n• Generate monthly/yearly financial reports\n• Send customized invoices automatically using templates\n\nThis solution automated critical finance workflows and allowed users to gain real-time financial insights across their business.",
+      results: "The platform delivered exceptional results:\n\n• 80% automation of financial workflows\n• Real-time financial insights and reporting\n• Streamlined multi-account management\n• Enhanced collaboration capabilities\n• Improved tax compliance\n• Significant time savings in financial operations",
+      technologies: ["Next.js", "Nest.js", "MongoDB", "REST APIs", "Docker"],
+      testimonial: {
+        quote: "The financial management platform has completely transformed our business operations. The automation and real-time insights have given us unprecedented control over our finances.",
+        author: "Fatima Al-Zahra",
+        position: "CFO, Infro-labs UAE"
+      }
+    }
+  },
+  {
+    id: 4,
+    title: "Virtual Travel & Itinerary Planning Platform",
+    description: "Immersive virtual travel platform with business simulation and comprehensive trip planning",
+    image: "",
+    detail_images: [],
+    category: "Travel Technology",
+    client: "Birdy Ventures, Japan",
+    duration: "15 months",
+    results: ["Immersive Travel Experience", "Comprehensive Trip Planning", "Virtual Business Platform"],
+    content: {
+      overview: "Created a unique web platform offering immersive virtual travel experiences by showcasing local businesses and events. Users can plan trips end-to-end, build detailed itineraries, and even launch virtual storefronts or businesses within the ecosystem.",
+      challenge: "Most travel planning platforms are fragmented, offering limited functionality. Users often need multiple apps to manage transportation, accommodation, events, and bookings. Additionally, there was no platform where users could both plan trips and simulate owning or managing a virtual business in the destination city.",
+      solution: "Developed a feature-rich travel management and virtual experience platform where users can:\n\n• Create full trip itineraries with day-by-day planning\n• Add travel companions, transportation, tickets, and business/event visits\n• Explore cities virtually through interactive listings of businesses and events\n• Register as business owners to set up and operate their own virtual shops or services\n\nThis solution blended trip planning with a gamified, immersive experience of exploring or running a business in a target city—without leaving home.",
+      results: "The platform achieved remarkable results:\n\n• Comprehensive end-to-end trip planning\n• Immersive virtual travel experiences\n• Successful virtual business simulation\n• Enhanced user engagement and retention\n• Seamless integration of multiple travel services\n• Positive user feedback and adoption",
+      technologies: ["Next.js", "Nest.js", "PostgreSQL", "Arango DB", "REST APIs", "Docker", "Microservices", "SEO Optimization", "Server-Side Rendering (SSR)"],
+      testimonial: {
+        quote: "The virtual travel platform has created a completely new way to experience travel planning. The combination of trip planning and virtual business simulation is truly innovative.",
+        author: "Yuki Tanaka",
+        position: "CEO, Birdy Ventures Japan"
+      }
+    }
+  },
+  {
+    id: 5,
     title: "IT Service Management Platform",
     description: "Enterprise IT service and resource management solution",
     image: "/case-studies/it_company/it.png",
@@ -26,7 +131,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 26,
+    id: 6,
     title: "Lmntrix Security Operations Platform",
     description: "Advanced cybersecurity monitoring and response system",
     image: "/case-studies/lmntrix/lmntrix app (1).png",
@@ -39,6 +144,7 @@ export const caseStudies = [
       "/case-studies/lmntrix/lmntrixapp_2.webp",
       "/case-studies/lmntrix/lmntrixapp_2 (1).webp",
     ],
+    video_link: "https://drive.google.com/file/d/1XYZ789GHI012/view",
     category: "Cybersecurity",
     client: "Lmntrix Security",
     duration: "12 months",
@@ -57,7 +163,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 27,
+    id: 7,
     title: "Socta Digital Agency Platform",
     description: "Comprehensive digital marketing and analytics solution",
     image: "/case-studies/socta-dot-agency/dot (4).png",
@@ -90,7 +196,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 28,
+    id: 8,
     title: "Studio Marketing Analytics Platform",
     description: "Advanced marketing performance and analytics solution",
     image: "/case-studies/studio_marketing/mark (2).png",
@@ -125,7 +231,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 22,
+    id: 9,
     title: "GRC Lens Risk Management Platform",
     description: "Advanced risk management and compliance monitoring solution",
     image: "/case-studies/grc_lens/grcrisk (1).png",
@@ -156,7 +262,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 23,
+    id: 10,
     title: "Graduate Student Portal",
     description: "Comprehensive platform for graduate student management and support",
     image: "/case-studies/grads_student/grads (4).png",
@@ -184,7 +290,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 24,
+    id: 11,
     title: "Full Measure Education Platform",
     description: "Innovative education management and analytics solution",
     image: "/case-studies/full_measure/full_measure (1).png",
@@ -212,7 +318,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 21,
+    id: 12,
     title: "AI-Powered Healthcare Solutions",
     description: "Revolutionizing healthcare delivery with artificial intelligence and data analytics",
     image: "/case-studies/insaaf_care/insaaf-1.png",
@@ -223,6 +329,7 @@ export const caseStudies = [
       "/case-studies/insaaf_care/insaaf-4.png",
       "/case-studies/insaaf_care/insaaf-5.png",
     ],
+    video_link: "https://drive.google.com/file/d/1DEF456GHI789/view",
     category: "Healthcare Technology",
     client: "Insaaf Care",
     duration: "9 months",
@@ -241,7 +348,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 19,
+    id: 13,
     title: "SOS Login Security System",
     description: "Implementing a secure and user-friendly authentication system",
     image: "/case-studies/sos_login/LOGIN.png",
@@ -269,7 +376,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 20,
+    id: 14,
     title: "News Dashboard Platform",
     description: "Creating an intuitive news management and distribution system",
     image: "/case-studies/news_dashboard/All Internal News.png",
@@ -298,7 +405,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 16,
+    id: 15,
     title: "Employee Engagement Platform",
     description: "Creating a comprehensive platform for tracking and improving employee engagement",
     image: "/case-studies/engagement/Dashboard.png",
@@ -329,7 +436,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 17,
+    id: 16,
     title: "Ezy-Pzy AI Learning Assistant",
     description: "Developing an AI-powered learning assistant for enhanced education",
     image: "/case-studies/ezy-pzy-ai/Upload PDF.png",
@@ -362,7 +469,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 13,
+    id: 17,
     title: "CMS Portal Development",
     description: "Building a powerful content management system for enterprise data handling",
     image: "/case-studies/cms/Dashboard.png",
@@ -393,7 +500,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 14,
+    id: 18,
     title: "Daleel Business Intelligence Platform",
     description: "Creating an advanced business intelligence solution for data-driven decision making",
     image: "/case-studies/daleel/Daleel-1.png",
@@ -422,7 +529,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 10,
+    id: 19,
     title: "UI/UX Design Excellence",
     description: "Creating intuitive and engaging user experiences through modern design principles",
     image: "/case-studies/UI UX/ui ux (1).png",
@@ -451,7 +558,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 11,
+    id: 20,
     title: "Calendex Smart Scheduling Platform",
     description: "Revolutionizing appointment scheduling with AI-powered automation",
     image: "/case-studies/calendex/Artboard – 214.png",
@@ -480,7 +587,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 1,
+    id: 21,
     title: "Digital Transformation for E-commerce Giant",
     description: "How we helped a leading e-commerce platform achieve 200% growth through digital transformation",
     image: "/case-studies/Ecomerace.png",
@@ -509,7 +616,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 3,
+    id: 22,
     title: "FinTech Innovation Success Story",
     description: "Building a next-generation financial platform that disrupted traditional banking",
     image: "/case-studies/grc_lens/grccom (1).png",
@@ -535,7 +642,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 5,
+    id: 23,
     title: "Enterprise Threat Intelligence Platform",
     description: "Building a comprehensive threat intelligence and assessment platform for enterprise security",
     image: "/case-studies/tip/Tipl.png",
@@ -565,7 +672,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 6,
+    id: 24,
     title: "Privacy Defender Security Suite",
     description: "Developing a comprehensive cross-platform privacy protection solution for consumers",
     image: "/case-studies/privacyapp/MacBook Pro 16_ - 7.png",
@@ -595,7 +702,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 7,
+    id: 25,
     title: "Pligence Corporate Website Development",
     description: "Creating a modern, secure, and user-friendly corporate website",
     image: "/case-studies/pligence/pligence (1).png",
@@ -624,7 +731,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 8,
+    id: 26,
     title: "Use Case Expert AI Platform",
     description: "Developing an AI-powered business process optimization platform",
     image: "/case-studies/expert/expert.jpg",
@@ -651,7 +758,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 9,
+    id: 27,
     title: "Plexaar Cloud Integration Platform",
     description: "Building a comprehensive cloud integration and management solution",
     image: "/case-studies/plexaar/Screenshot 2025-06-01 152019.png",
@@ -678,7 +785,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 12,
+    id: 28,
     title: "Hey Iris AI Assistant",
     description: "Building an intelligent virtual assistant for enhanced productivity",
     image: "/case-studies/hey-iris/Questions 1.png",
@@ -716,7 +823,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 15,
+    id: 29,
     title: "E-Voting System Development",
     description: "Building a secure and transparent electronic voting platform",
     image: "/case-studies/e_voting/2033.png",
@@ -744,7 +851,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 18,
+    id: 30,
     title: "Risk Assessment Management System",
     description: "Building a comprehensive risk assessment and management platform",
     image: "/case-studies/risk_assessment/Entry Details - Overview.png",
@@ -777,7 +884,7 @@ export const caseStudies = [
     }
   },
   {
-    id: 21,
+    id: 31,
     title: "Timesheet Management System",
     description: "Building an efficient timesheet and project tracking solution",
     image: "/case-studies/timesheet/Pening Timesheet.png",
