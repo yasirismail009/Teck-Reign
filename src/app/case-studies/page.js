@@ -155,14 +155,33 @@ export default function CaseStudies() {
                         </span>
                       ))}
                     </div>
-                    <div className="flex items-center justify-between mt-2">
-                      <span className="text-xs text-gray-400">Client: {study.client}</span>
-                      <Link 
-                        href={`/case-studies/${study.id}`}
-                        className="px-4 py-2 rounded-lg border border-[var(--color-primary)] text-[var(--color-primary)] font-medium text-sm bg-transparent hover:bg-[var(--color-primary)] hover:text-white transition-colors"
-                      >
-                        View Case Study
-                      </Link>
+                    <div className="flex flex-col gap-3">
+                      <div className="flex items-center gap-2">
+                        <span className="text-sm font-semibold text-gray-700">Client:</span>
+                        <span className="text-sm font-bold text-gray-900">{study.client}</span>
+                      </div>
+                      <div className="flex gap-2">
+                        {study.live_link && (
+                          <a 
+                            href={study.live_link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="px-3 py-2 rounded-lg border border-green-600 text-green-600 font-medium text-xs bg-transparent hover:bg-green-600 hover:text-white transition-colors flex items-center gap-1"
+                            title="Open live project in new tab"
+                          >
+                            <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                            </svg>
+                            Live URL
+                          </a>
+                        )}
+                        <Link 
+                          href={`/case-studies/${study.id}`}
+                          className="px-4 py-2 rounded-lg border border-[var(--color-primary)] text-[var(--color-primary)] font-medium text-sm bg-transparent hover:bg-[var(--color-primary)] hover:text-white transition-colors"
+                        >
+                          View Case Study
+                        </Link>
+                      </div>
                     </div>
                   </div>
                   </div>
