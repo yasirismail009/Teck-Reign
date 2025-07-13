@@ -90,6 +90,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <meta name="facebook-domain-verification" content="g7o606mq71u9dquibk7e72rtedb687" />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-5ZVL3EB83B"
           strategy="afterInteractive"
