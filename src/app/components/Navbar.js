@@ -84,6 +84,18 @@ export default function Navbar() {
       {/* Desktop Navigation */}
       <div className="hidden md:flex gap-8 text-base font-semibold items-center">
         <Link href="/" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Home</Link>
+        <a
+          href="https://kampalo.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:underline transition-colors flex items-center gap-1.5"
+          style={{ color: "#1A2341" }}
+        >
+          KAMPALO
+          <span className="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-50 border border-emerald-200/80 px-1.5 py-0.5 rounded">
+            Product
+          </span>
+        </a>
         <div className="relative">
           <div className="flex items-center gap-2">
             <Link 
@@ -184,6 +196,16 @@ export default function Navbar() {
                 >
                   Home
                 </Link>
+                <a
+                  href="https://kampalo.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-[#1A2341] hover:text-[#8958FE] transition-colors py-2 flex items-center gap-2"
+                  onClick={toggleMobileMenu}
+                >
+                  KAMPALO
+                  <span className="text-[10px] font-bold uppercase text-emerald-700">↗</span>
+                </a>
                 <div className="space-y-2">
                   <div className="flex items-center justify-between">
                     <Link 

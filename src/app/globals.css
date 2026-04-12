@@ -7,10 +7,11 @@
   --color-surface: #E7E7EF;
   --color-surface-light: #F9F9FB;
   --color-accent: #1C253E;
-  --background: #FFFFFF;
-  --foreground: #030D28;
-  --text-main: #030D28;
-  --text-light: #FFFFFF;
+  --background: #ffffff;
+  --foreground: #0f172a;
+  --text-main: #0f172a;
+  --text-light: #ffffff;
+  --color-navy: #0a1531;
 }
 
 @theme inline {
@@ -20,27 +21,11 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #F9F9FB;
-    --foreground: #F9F9FB;
-    --color-primary: #8958FE;
-    --color-primary-dark: #030D28;
-    --color-secondary: #2E3138;
-    --color-surface: #1C253E;
-    --color-surface-light: #2E3138;
-    --color-accent: #E7E7EF;
-    --text-main: #F9F9FB;
-    --text-light: #FFFFFF;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   position: relative;
-  zoom: 90%;
 }
 
 .bg-hero-gradient {

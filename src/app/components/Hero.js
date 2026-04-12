@@ -4,24 +4,49 @@ import React from 'react';
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center text-center mb-16 relative" aria-label="Hero section">
-      <h1 className="mb-3">
-        <span className="block text-3xl sm:text-5xl md:text-6xl font-light text-gray-400" style={{ letterSpacing: '-0.02em' }}>
-          Transforming Ideas into
+    <section className="flex flex-col items-center text-center mb-12 sm:mb-16 relative max-w-4xl mx-auto" aria-label="Hero section">
+      <a
+        href="https://kampalo.com/"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="mb-6 inline-flex items-center gap-2 rounded-full border border-slate-200/90 bg-white/90 px-4 py-1.5 text-xs font-medium text-slate-600 shadow-sm backdrop-blur-sm transition hover:border-[#8958FE]/40 hover:text-[#0A1531]"
+      >
+        <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-emerald-800">
+          Live product
         </span>
-        <span className="block text-4xl sm:text-6xl md:text-7xl font-extrabold text-gray-900 mt-1" style={{ letterSpacing: '-0.03em' }}>
-          Digital Innovation
+        KAMPALO — unified marketing analytics
+        <span className="text-slate-400" aria-hidden="true">
+          →
+        </span>
+      </a>
+      <h1 className="mb-5">
+        <span className="block text-3xl sm:text-5xl md:text-6xl font-light text-slate-500 tracking-tight">
+          Transforming ideas into
+        </span>
+        <span className="block text-4xl sm:text-6xl md:text-7xl font-extrabold text-[#0A1531] mt-1 tracking-tight">
+          digital innovation
         </span>
       </h1>
-      <p className="max-w-2xl text-base sm:text-lg text-gray-400 mb-8">
-        We build cutting-edge software solutions that drive business growth. From AI-powered applications to scalable cloud infrastructure, we help companies navigate the digital landscape with confidence.
+      <p className="max-w-2xl text-base sm:text-lg text-slate-600 leading-relaxed mb-9">
+        We design and ship production software that moves the needle—from flagship platforms like{' '}
+        <span className="text-[#0A1531] font-semibold">KAMPALO</span> to custom cloud, AI, and enterprise solutions
+        for teams that need reliability at scale.
       </p>
-      <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-        <Link href="/contact-us" className="px-8 py-3 rounded-lg font-semibold shadow transition bg-violet-500 hover:bg-violet-600 text-white text-base sm:text-lg">
-          Start Your Project
+      <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center w-full sm:w-auto">
+        <Link
+          href="/contact-us"
+          className="w-full sm:w-auto px-8 py-3.5 rounded-xl font-semibold text-white bg-[#8958FE] hover:bg-[#7c4fe8] shadow-lg shadow-[#8958FE]/20 transition-colors text-base"
+        >
+          Start your project
         </Link>
-        <Link href="/case-studies" className="font-bold flex items-center gap-1 text-gray-900 hover:underline text-base sm:text-lg">
-          View Our Tech Stack <span className="text-lg" aria-hidden="true">↗</span>
+        <Link
+          href="/case-studies"
+          className="w-full sm:w-auto font-semibold flex items-center justify-center gap-1.5 text-[#0A1531] border border-slate-200 rounded-xl px-8 py-3.5 hover:bg-slate-50 transition-colors text-base"
+        >
+          View case studies
+          <span className="text-lg leading-none" aria-hidden="true">
+            ↗
+          </span>
         </Link>
       </div>
     </section>

@@ -7,7 +7,7 @@ export default function Footer() {
     <footer className="w-full bg-[#0A1531] text-white py-16 px-6 mt-auto relative z-20 mx-auto sm:px-12 lg:px-20">
       <div className=" mx-auto">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 mb-12">
           {/* Company Info */}
           <div className="space-y-4">
             <h3 className="text-xl font-bold">TekReign</h3>
@@ -28,6 +28,31 @@ export default function Footer() {
                 <FaInstagram size={20} />
               </a>
             </div>
+          </div>
+
+          {/* Products */}
+          <div>
+            <h3 className="text-lg font-semibold mb-4">Products</h3>
+            <ul className="space-y-2">
+              <li>
+                <a
+                  href="https://kampalo.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-300 hover:text-white transition-colors inline-flex items-center gap-1"
+                >
+                  KAMPALO
+                  <span className="text-xs opacity-70" aria-hidden="true">
+                    ↗
+                  </span>
+                </a>
+              </li>
+              <li>
+                <p className="text-gray-400 text-sm leading-relaxed">
+                  Unified marketing analytics and campaign management—Google Ads, Meta, and more in one dashboard.
+                </p>
+              </li>
+            </ul>
           </div>
 
           {/* Quick Links */}
@@ -105,7 +130,7 @@ export default function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <span className="text-sm text-gray-300">© 2025 TekReign. All Rights Reserved</span>
+            <span className="text-sm text-gray-300">© 2026 TekReign. All Rights Reserved</span>
             <div className="flex gap-8 text-sm">
               <Link href="/privacy-policy" className="text-gray-300 hover:text-white transition-colors">
                 Privacy Policy

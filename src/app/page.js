@@ -1,4 +1,5 @@
 import Hero from './components/Hero';
+import KampaloSection from './components/KampaloSection';
 import ServiceCards from './components/ServiceCards';
 import AboutUs from './components/AboutUs';
 import ServicesSection from './components/ServicesSection';
@@ -35,14 +36,15 @@ export default function Home() {
           })
         }}
       />
-      <article className="font-sans flex flex-col items-center relative overflow-x-hidden bg-foreground" style={{ color: "var(--color-foreground)" }}>
-        {/* Background overlay */}
-        <div className="absolute inset-0 z-0" aria-hidden="true"></div>
-        
-        {/* Main content container */}
+      <article className="font-sans flex flex-col items-center relative overflow-x-hidden bg-white text-slate-900">
+        <div className="absolute inset-0 z-0 pointer-events-none bg-gradient-to-b from-slate-50/80 via-white to-white" aria-hidden="true" />
         <div className="w-full relative">
-          <section className="mx-auto px-6 sm:px-12 lg:px-20" aria-label="Hero section">
+          <section className="mx-auto px-6 sm:px-12 lg:px-20 pt-4 sm:pt-8" aria-label="Hero section">
             <Hero />
+          </section>
+
+          <section className="w-full" aria-label="KAMPALO product">
+            <KampaloSection />
           </section>
           
           <section className="mx-auto px-6 sm:px-12 lg:px-20" aria-label="Service cards">
