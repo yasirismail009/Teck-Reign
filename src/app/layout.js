@@ -82,7 +82,7 @@ export const metadata = {
     },
   },
   verification: {
-    google: 'your-google-site-verification',
+    google: 'W-Iz8GyV8lnt9FtfHdhyX2Ggmg0Nll_fqIOoWn-XHsc',
   },
 };
 
