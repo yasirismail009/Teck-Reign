@@ -1,8 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import Script from "next/script";
 import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -91,33 +91,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <meta name="facebook-domain-verification" content="g7o606mq71u9dquibk7e72rtedb687" />
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-5ZVL3EB83B"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-5ZVL3EB83B');
-          `}
-        </Script>
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=AW-16469687105"
-          strategy="afterInteractive"
-        />
-        <Script id="google-ads" strategy="afterInteractive">
-          {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'AW-16469687105');
-          `}
-        </Script>
+        <meta name="facebook-domain-verification" content="g7o606mq71u9dquibk7e72rtedb687" />
       </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col `}>
+        <GoogleAnalytics />
         <Header />
         <main className="flex-grow">
           {children}

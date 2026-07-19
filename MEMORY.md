@@ -38,6 +38,11 @@ Marketing / agency site for TekReign (Next.js 15 App Router). Domain: `https://t
 - Homepage SEO title/meta, Organization + SoftwareApplication (KAMPALO) JSON-LD, and FAQ reflect AI + KAMPALO
 - Software Development service page includes Agentic AI, Machine Learning, LLMs & GenAI, Modern AI Solutions sections
 
+## Analytics (2026-07-19)
+- GA4 `G-5ZVL3EB83B` + Google Ads `AW-16469687105` via `src/app/components/GoogleAnalytics.js`
+- `send_page_view: false` on config; explicit `page_view` on every App Router path/query change (`src/lib/analytics.js`) so client navigations are tracked sitewide
+- Verify in GA4: Reports → Realtime after deploy; Enhanced measurement (scrolls/outbound) is configured in the GA4 property UI
+
 ## Favicon / Google SERP (2026-07-19)
 - Google showed generic globe: SVG text favicon is unreliable; primary icon is now `/favicon-48x48.png` (multiples of 48px required)
 - App Router file icons: `src/app/favicon.ico`, `src/app/icon.png`, `src/app/apple-icon.png`
