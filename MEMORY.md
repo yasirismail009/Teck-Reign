@@ -38,8 +38,16 @@ Marketing / agency site for TekReign (Next.js 15 App Router). Domain: `https://t
 - Homepage SEO title/meta, Organization + SoftwareApplication (KAMPALO) JSON-LD, and FAQ reflect AI + KAMPALO
 - Software Development service page includes Agentic AI, Machine Learning, LLMs & GenAI, Modern AI Solutions sections
 
+## Favicon / Google SERP (2026-07-19)
+- Google showed generic globe: SVG text favicon is unreliable; primary icon is now `/favicon-48x48.png` (multiples of 48px required)
+- App Router file icons: `src/app/favicon.ico`, `src/app/icon.png`, `src/app/apple-icon.png`
+- Public PNGs: `favicon-48x48.png`, `favicon-32x32.png`, `favicon-96x96.png`
+- `site.webmanifest` purpose split (`any` / `maskable` separately — combined value is invalid)
+- Live `tekreign.com/favicon.ico` previously returned **503** — hosting must serve icons with 200 or Google keeps the globe; SERP favicon can take days after re-crawl
+
 ## Known Issues / Next Steps
 - Add real `og-image.jpg` (1200×630) and `twitter-image.jpg`
+- Confirm production serves `/favicon-48x48.png` and `/favicon.ico` with HTTP 200 (not 503) after deploy; request reindex in GSC
 - Many marketing pages are `'use client'` — prefer server components for critical copy long-term
 - Case study detail page still uses sync `params` in a client component (Next 15 prefers async params / `use()`)
 - Submit updated sitemap in Google Search Console after deploy
