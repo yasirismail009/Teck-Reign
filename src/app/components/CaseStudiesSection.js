@@ -5,15 +5,27 @@ import { caseStudies } from '../data/caseStudies';
 import PlaceholderImage from './PlaceholderImage';
 
 export default function CaseStudiesSection() {
-  // Get the first two case studies
-  const featuredStudies = caseStudies.slice(0, 2);
-  // Get testimonials from case studies
-  const testimonials = caseStudies.slice(0, 6).map(study => ({
-    quote: study.content.testimonial.quote,
-    author: study.content.testimonial.author,
-    position: study.content.testimonial.position,
-    category: study.category
-  }));
+  const byId = (id) => caseStudies.find((study) => study.id === id);
+  const featured = [byId(32), byId(33)].filter(Boolean);
+  const cards = featured.length === 2 ? featured : caseStudies.slice(0, 2);
+
+  // Get testimonials from case studies (prefer AI / product stories)
+  const testimonialSource = [
+    byId(32),
+    byId(33),
+    byId(35),
+    byId(28),
+    byId(34),
+    ...caseStudies,
+  ].filter(Boolean);
+  const testimonials = [...new Map(testimonialSource.map((s) => [s.id, s])).values()]
+    .slice(0, 6)
+    .map((study) => ({
+      quote: study.content.testimonial.quote,
+      author: study.content.testimonial.author,
+      position: study.content.testimonial.position,
+      category: study.category,
+    }));
 
   return (
     <>
@@ -26,10 +38,10 @@ export default function CaseStudiesSection() {
         {/* Left Card */}
         <div className="flex-1 flex flex-col items-start bg-[#101C3A] rounded-3xl overflow-hidden shadow-lg max-w-sm">
           <div className="w-full h-64 overflow-hidden">
-            {featuredStudies[0].image ? (
+            {cards[0].image ? (
               <Image
-                src={featuredStudies[0].image}
-                alt={featuredStudies[0].title}
+                src={cards[0].image}
+                alt={cards[0].title}
                 width={400}
                 height={400}
                 className="object-cover"
@@ -37,17 +49,17 @@ export default function CaseStudiesSection() {
               />
             ) : (
               <PlaceholderImage 
-                category={featuredStudies[0].category}
-                title={featuredStudies[0].title}
+                category={cards[0].category}
+                title={cards[0].title}
               />
             )}
           </div>
           <div className="p-6">
-            <span className="text-xs font-semibold text-[#A084FE] uppercase tracking-wide mb-2 block">{featuredStudies[0].category}</span>
-            <h3 className="text-lg font-semibold text-white mb-2">{featuredStudies[0].title}</h3>
-            <p className="text-gray-400 text-sm mb-4">{featuredStudies[0].description}</p>
+            <span className="text-xs font-semibold text-[#A084FE] uppercase tracking-wide mb-2 block">{cards[0].category}</span>
+            <h3 className="text-lg font-semibold text-white mb-2">{cards[0].title}</h3>
+            <p className="text-gray-400 text-sm mb-4">{cards[0].description}</p>
             <div className="flex flex-wrap gap-2">
-              {featuredStudies[0].results.slice(0, 2).map((result, index) => (
+              {cards[0].results.slice(0, 2).map((result, index) => (
                 <span key={index} className="px-2 py-1 bg-[#A084FE]/10 text-[#A084FE] text-xs rounded-full">
                   {result}
                 </span>
@@ -59,10 +71,10 @@ export default function CaseStudiesSection() {
         {/* Center Text & Button */}
         <div className="flex-1 flex flex-col items-center justify-center text-center px-4">
           <p className="text-white text-2xl font-medium leading-snug mb-8 max-w-xs md:max-w-sm">
-            We Blend innovative digital strategies with traditional approaches,<br className="hidden md:block" /> To deliver comprehensive solutions
+            We blend modern digital strategies with proven delivery methods<br className="hidden md:block" /> to ship complete, results-focused solutions.
           </p>
           <Link href="/case-studies" className="mt-2 px-8 py-3 rounded-full border border-white text-white font-semibold text-base flex items-center gap-2 hover:bg-white hover:text-[#0A1531] transition">
-            More Case Studies
+            View more case studies
             <span className="inline-block transform translate-x-1">↗</span>
           </Link>
         </div>
@@ -70,10 +82,10 @@ export default function CaseStudiesSection() {
         {/* Right Card */}
         <div className="flex-1 flex flex-col items-start bg-[#101C3A] rounded-3xl overflow-hidden shadow-lg max-w-sm">
           <div className="w-full h-64 overflow-hidden">
-          {featuredStudies[1].image ? (
+          {cards[1].image ? (
                         <Image
-                          src={featuredStudies[1].image}
-                          alt={featuredStudies[1].title}
+                          src={cards[1].image}
+                          alt={cards[1].title}
                           width={400}
                           height={400}
                           className="object-cover"
@@ -81,17 +93,17 @@ export default function CaseStudiesSection() {
                         />
                       ) : (
             <PlaceholderImage 
-              category={featuredStudies[1].category}
-              title={featuredStudies[1].title}
+              category={cards[1].category}
+              title={cards[1].title}
             />
             )}
           </div>
           <div className="p-6">
-            <span className="text-xs font-semibold text-[#A084FE] uppercase tracking-wide mb-2 block">{featuredStudies[1].category}</span>
-            <h3 className="text-lg font-semibold text-white mb-2">{featuredStudies[1].title}</h3>
-            <p className="text-gray-400 text-sm mb-4">{featuredStudies[1].description}</p>
+            <span className="text-xs font-semibold text-[#A084FE] uppercase tracking-wide mb-2 block">{cards[1].category}</span>
+            <h3 className="text-lg font-semibold text-white mb-2">{cards[1].title}</h3>
+            <p className="text-gray-400 text-sm mb-4">{cards[1].description}</p>
             <div className="flex flex-wrap gap-2">
-              {featuredStudies[1].results.slice(0, 2).map((result, index) => (
+              {cards[1].results.slice(0, 2).map((result, index) => (
                 <span key={index} className="px-2 py-1 bg-[#A084FE]/10 text-[#A084FE] text-xs rounded-full">
                   {result}
                 </span>

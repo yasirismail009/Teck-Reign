@@ -63,7 +63,7 @@ export default function CaseStudies() {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg md:text-xl font-light opacity-80"
           >
-            Discover how we&apos;ve helped businesses transform and achieve remarkable results
+            Real TekReign projects—see how we help teams ship software and achieve measurable results
           </motion.p>
           <motion.div 
             initial={{ opacity: 0, y: 20 }}

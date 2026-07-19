@@ -14,23 +14,26 @@ export default function Hero() {
         <span className="rounded-full bg-emerald-500/15 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-emerald-800">
           Live product
         </span>
-        KAMPALO — unified marketing analytics
+        KAMPALO — Kai agentic marketing AI
         <span className="text-slate-400" aria-hidden="true">
           →
         </span>
       </a>
       <h1 className="mb-5">
         <span className="block text-3xl sm:text-5xl md:text-6xl font-light text-slate-500 tracking-tight">
-          Transforming ideas into
+          TekReign builds
         </span>
         <span className="block text-4xl sm:text-6xl md:text-7xl font-extrabold text-[#0A1531] mt-1 tracking-tight">
-          digital innovation
+          AI-powered digital products
         </span>
       </h1>
       <p className="max-w-2xl text-base sm:text-lg text-slate-600 leading-relaxed mb-9">
-        We design and ship production software that moves the needle—from flagship platforms like{' '}
-        <span className="text-[#0A1531] font-semibold">KAMPALO</span> to custom cloud, AI, and enterprise solutions
-        for teams that need reliability at scale.
+        We design and ship production software with{' '}
+        <span className="text-[#0A1531] font-semibold">Agentic AI</span>,{' '}
+        <span className="text-[#0A1531] font-semibold">ML</span>,{' '}
+        <span className="text-[#0A1531] font-semibold">LLMs</span>, and modern AI solutions—from our flagship{' '}
+        <span className="text-[#0A1531] font-semibold">KAMPALO</span> AI marketing platform to custom cloud and
+        enterprise systems built for reliability at scale.
       </p>
       <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 items-center justify-center w-full sm:w-auto">
         <Link

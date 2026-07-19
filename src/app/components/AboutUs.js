@@ -5,31 +5,31 @@ const features = [
     icon: (
       <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#A084FE"/><path d="M10 16l4 4 8-8" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
     ),
-    label: 'Strategic Excellence',
+    label: 'Agentic AI',
   },
   {
     icon: (
       <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#A084FE"/><path d="M16 8v8l6 6" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
     ),
-    label: 'Creative Solutions',
+    label: 'Machine Learning',
   },
   {
     icon: (
       <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="16" fill="#A084FE"/><path d="M10 22V10h12v12H10z" stroke="#fff" strokeWidth="2" strokeLinejoin="round"/></svg>
     ),
-    label: 'Financial Expertise',
+    label: 'LLMs & GenAI',
   },
   {
     icon: (
       <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect width="32" height="32" rx="8" fill="#A084FE"/><path d="M8 16h16M16 8v16" stroke="#fff" strokeWidth="2" strokeLinecap="round"/></svg>
     ),
-    label: 'Comprehensive Service',
+    label: 'Modern AI solutions',
   },
   {
     icon: (
       <svg width="32" height="32" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><circle cx="16" cy="16" r="16" fill="#A084FE"/><path d="M10 16l4 4 8-8" stroke="#fff" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>
     ),
-    label: 'Transparency & Partnership',
+    label: 'End-to-end delivery',
   },
 ];
 
@@ -38,6 +38,7 @@ const clientLogos = [
   { name: 'Selteq', src: 'https://placehold.co/64x32?text=Logo', alt: 'Selteq company logo' },
   { name: 'Inova Bridge', src: 'https://placehold.co/64x32?text=Logo', alt: 'Inova Bridge company logo' },
   { name: 'IRIS AI', src: 'https://placehold.co/64x32?text=Logo', alt: 'IRIS AI company logo' },
+  { name: 'TerraSkyAI', src: 'https://placehold.co/64x32?text=Logo', alt: 'TerraSkyAI company logo' },
   { name: 'LMNTRIX', src: 'https://placehold.co/64x32?text=Logo', alt: 'LMNTRIX company logo' },
   { name: 'Birdy', src: 'https://placehold.co/64x32?text=Logo', alt: 'Birdy company logo' },
 ];
@@ -58,7 +59,8 @@ export default function AboutUs() {
           >
             KAMPALO
           </a>
-          , our unified marketing analytics platform—alongside custom software, cloud, and digital transformation for modern brands.
+          , our <span className="font-bold text-gray-900">AI marketing platform with Kai agentic agents</span>—alongside
+          Agentic AI, ML, LLM, custom software, cloud, and digital transformation for modern brands.
         </h2>
       </div>
       <div className="flex overflow-x-auto lg:flex-row md:flex-row sm:flex-col flex-col justify-start sm:justify-between items-center gap-4 sm:gap-8 mb-8 sm:mb-16 px-2 scrollbar-hide" role="list" aria-label="Our key features">

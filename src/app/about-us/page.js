@@ -1,9 +1,13 @@
 import Image from 'next/image';
+import { createPageMetadata } from '../../lib/seo';
 
-export const metadata = {
-  title: 'About Us - TekReign',
-  description: 'Learn about TekReign - Our mission, vision, and the team behind innovative technology solutions.',
-};
+export const metadata = createPageMetadata({
+  title: 'About Us',
+  description:
+    'Learn about TekReign—our mission, vision, and leadership team delivering software, digital transformation, and technology consulting.',
+  path: '/about-us',
+  keywords: 'about TekReign, technology company, software development team, digital transformation experts',
+});
 
 export default function AboutUs() {
   return (
@@ -14,7 +18,7 @@ export default function AboutUs() {
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">About TekReign</h1>
             <p className="text-xl md:text-2xl opacity-90">
-              Empowering businesses through innovative technology solutions
+              Helping businesses grow with practical technology solutions
             </p>
           </div>
         </div>
@@ -33,16 +37,16 @@ export default function AboutUs() {
                 <div className="absolute -left-4 top-0 w-1 h-16 bg-[#8958FE]"></div>
                 <h3 className="text-2xl font-bold mb-6 text-[#1A2341]">Mission</h3>
                 <p className="text-[#7B819A] text-lg leading-relaxed">
-                  To transform businesses through innovative technology solutions that drive growth,
-                  efficiency, and competitive advantage in the digital age.
+                  Help businesses grow more efficiently and stay competitive by delivering technology
+                  solutions that improve how they operate and serve customers online.
                 </p>
               </div>
               <div className="relative">
                 <div className="absolute -left-4 top-0 w-1 h-16 bg-[#8958FE]"></div>
                 <h3 className="text-2xl font-bold mb-6 text-[#1A2341]">Vision</h3>
                 <p className="text-[#7B819A] text-lg leading-relaxed">
-                  To be the leading technology partner for businesses worldwide, known for our
-                  innovative solutions, exceptional service, and commitment to client success.
+                  Become a trusted technology partner for businesses worldwide—recognized for useful
+                  solutions, reliable service, and lasting client success.
                 </p>
               </div>
             </div>
@@ -62,7 +66,7 @@ export default function AboutUs() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Innovation</h3>
-              <p className="text-[#7B819A]">Pushing boundaries and embracing new technologies</p>
+              <p className="text-[#7B819A]">Adopting new technologies that create real product value</p>
             </div>
             <div className="text-center">
               <div className="bg-[#F5F7FA] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -71,7 +75,7 @@ export default function AboutUs() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Excellence</h3>
-              <p className="text-[#7B819A]">Delivering the highest quality in everything we do</p>
+              <p className="text-[#7B819A]">Holding a high quality bar on every project we deliver</p>
             </div>
             <div className="text-center">
               <div className="bg-[#F5F7FA] w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -80,7 +84,7 @@ export default function AboutUs() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Integrity</h3>
-              <p className="text-[#7B819A]">Building trust through honest and ethical practices</p>
+              <p className="text-[#7B819A]">Earning trust through honest, ethical work with clients</p>
             </div>
           </div>
         </div>
@@ -95,19 +99,19 @@ export default function AboutUs() {
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[#E6E8F0]"></div>
               <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Muhammad Yasir Ismail</h3>
               <p className="text-[#8958FE] mb-2">Co-Founder</p>
-              <p className="text-[#7B819A]">Visionary leader driving company innovation and growth</p>
+              <p className="text-[#7B819A]">Leads company innovation and long-term growth</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[#E6E8F0]"></div>
               <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Syed Manshoor Ali</h3>
               <p className="text-[#8958FE] mb-2">Co-Founder</p>
-              <p className="text-[#7B819A]">Strategic leader shaping company direction and success</p>
+              <p className="text-[#7B819A]">Shapes company strategy and delivery direction</p>
             </div>
             <div className="bg-white p-6 rounded-lg shadow-lg text-center">
               <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-[#E6E8F0]"></div>
               <h3 className="text-xl font-semibold mb-2 text-[#1A2341]">Wasif Zia</h3>
               <p className="text-[#8958FE] mb-2">Business Development Manager</p>
-              <p className="text-[#7B819A]">Driving business growth and client relationships</p>
+              <p className="text-[#7B819A]">Builds client relationships and business growth</p>
             </div>
           </div>
         </div>

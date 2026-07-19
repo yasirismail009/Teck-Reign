@@ -42,14 +42,14 @@ const FinancialServicesCard = () => (
       <h2 className="text-white font-bold text-[2.3rem] leading-tight mb-8">Tech Services</h2>
       <div className="relative h-[180px] mb-8" role="list" aria-label="Technology services">
         {/* Staggered, overlapping chips */}
-        <span className="absolute left-0 top-0 bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-10deg]" role="listitem">Cloud Solutions</span>
-        <span className="absolute left-[120px] top-[30px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[8deg]" role="listitem">AI Development</span>
-        <span className="absolute left-[10px] top-[60px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-5deg]" role="listitem">Web Development</span>
-        <span className="absolute left-[160px] top-[80px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[12deg]" role="listitem">Mobile Apps</span>
-        <span className="absolute left-[60px] top-[110px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-7deg]" role="listitem">DevOps</span>
-        <span className="absolute left-[200px] top-[130px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[6deg]" role="listitem">UI/UX Design</span>
-        <span className="absolute left-[20px] top-[150px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-8deg]" role="listitem">Cybersecurity</span>
-        <span className="absolute left-[180px] top-[160px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[10deg]" role="listitem">Data Analytics</span>
+        <span className="absolute left-0 top-0 bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-10deg]" role="listitem">Agentic AI</span>
+        <span className="absolute left-[120px] top-[30px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[8deg]" role="listitem">Machine Learning</span>
+        <span className="absolute left-[10px] top-[60px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-5deg]" role="listitem">LLMs & GenAI</span>
+        <span className="absolute left-[160px] top-[80px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[12deg]" role="listitem">Modern AI Solutions</span>
+        <span className="absolute left-[60px] top-[110px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-7deg]" role="listitem">Web Development</span>
+        <span className="absolute left-[200px] top-[130px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[6deg]" role="listitem">Cloud Solutions</span>
+        <span className="absolute left-[20px] top-[150px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[-8deg]" role="listitem">Mobile Apps</span>
+        <span className="absolute left-[180px] top-[160px] bg-white text-[#8958FE] rounded-full px-5 py-2 font-semibold text-base shadow-md w-fit whitespace-nowrap overflow-hidden text-ellipsis rotate-[10deg]" role="listitem">KAMPALO AI</span>
       </div>
     </div>
     <div className="mt-auto">

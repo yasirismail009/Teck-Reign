@@ -109,7 +109,7 @@ export default function StrategicServicesPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            Comprehensive strategic communication solutions to protect and enhance your brand&apos;s reputation
+            Strategic communication services that protect and strengthen your brand reputation
           </motion.p>
         </div>
 

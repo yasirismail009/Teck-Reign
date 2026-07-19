@@ -1,13 +1,13 @@
 'use client'
 import React, { useEffect } from 'react';
-import { useParams, useSearchParams } from 'next/navigation';
+import { useParams } from 'next/navigation';
 
 const servicesData = {
   'software-development': {
     title: "Software Development",
-    description: "Transform your ideas into powerful digital solutions with our comprehensive software development services.",
+    description: "Custom software plus Agentic AI, ML, LLMs, and modern AI solutions—built for real business outcomes.",
     icon: "💻",
-    overview: "Our software development services combine cutting-edge technology with industry best practices to deliver scalable, secure, and high-performance solutions. We follow an agile methodology to ensure timely delivery and continuous improvement.",
+    overview: "We combine modern engineering with Agentic AI, machine learning, and LLM-powered systems to ship scalable, secure, high-performance products—using agile delivery so you get working increments and continuous improvement.",
     process: [
       "Requirement Analysis & Planning",
       "Architecture Design & Technology Selection",
@@ -25,6 +25,62 @@ const servicesData = {
       "Ongoing technical support"
     ],
     items: [
+      {
+        title: "Agentic AI",
+        description: "Autonomous AI agents that plan, act, and complete multi-step business workflows with human oversight.",
+        features: ["AI Agents", "Tool Use & Orchestration", "Workflow Automation", "Human-in-the-loop Controls"],
+        subservices: [
+          {
+            name: "Agent Design",
+            description: "Designing goal-driven agents that use tools and APIs safely",
+            technologies: ["LangChain", "LlamaIndex", "Custom Agent Frameworks", "OpenAI / Anthropic APIs"]
+          },
+          {
+            name: "Agent Orchestration",
+            description: "Coordinating multi-agent systems for complex business processes",
+            technologies: ["Multi-agent Patterns", "Memory Stores", "Evaluation Harnesses", "Observability"]
+          }
+        ]
+      },
+      {
+        title: "Machine Learning",
+        description: "Custom ML models for prediction, classification, personalization, and operational intelligence.",
+        features: ["Predictive Models", "Computer Vision", "Recommendation Systems", "Model Deployment"],
+        subservices: [
+          {
+            name: "Model Development",
+            description: "Training and validating models on your business data",
+            technologies: ["Python", "PyTorch", "TensorFlow", "scikit-learn"]
+          },
+          {
+            name: "MLOps",
+            description: "Deploying, monitoring, and iterating models in production",
+            technologies: ["Model Serving", "Feature Pipelines", "Monitoring", "A/B Testing"]
+          }
+        ]
+      },
+      {
+        title: "LLMs & GenAI",
+        description: "Large language model applications—chat, retrieval, content generation, and domain-specific assistants.",
+        features: ["RAG Systems", "Fine-tuning", "Prompt Engineering", "Enterprise Assistants"],
+        subservices: [
+          {
+            name: "RAG Applications",
+            description: "Grounded LLM answers over your documents and knowledge bases",
+            technologies: ["Vector Databases", "Embeddings", "Retrieval Pipelines", "Citations"]
+          },
+          {
+            name: "LLM Integration",
+            description: "Embedding GenAI into products and internal tools",
+            technologies: ["OpenAI", "Anthropic", "Open-source LLMs", "API Gateways"]
+          }
+        ]
+      },
+      {
+        title: "Modern AI Solutions",
+        description: "End-to-end AI product delivery—from discovery and architecture to production systems your teams can trust.",
+        features: ["AI Strategy", "Prototype to Production", "Evaluation & Safety", "Integration"],
+      },
       {
         title: "Web Development",
         description: "Custom web applications built with modern technologies and best practices.",
@@ -120,9 +176,9 @@ const servicesData = {
   },
   'digital-marketing': {
     title: "Digital Marketing",
-    description: "Boost your online presence and drive growth with our data-driven digital marketing strategies.",
+    description: "Grow visibility and demand with data-driven SEO, social, content, and PPC campaigns that support measurable growth.",
     icon: "📱",
-    overview: "Our digital marketing services are designed to increase your online visibility, engage your target audience, and drive measurable business growth. We combine data-driven strategies with creative content to deliver exceptional results.",
+    overview: "We help you increase online visibility, engage the right audience, and grow with measurable results—combining data-led strategy with clear creative and content.",
     process: [
       "Market Research & Analysis",
       "Strategy Development",
@@ -235,9 +291,9 @@ const servicesData = {
   },
   'design-ux': {
     title: "UI/UX Design",
-    description: "Create exceptional user experiences with our comprehensive design services.",
+    description: "Design clear, conversion-focused interfaces—UI/UX, brand identity, websites, and mobile app experiences.",
     icon: "🎨",
-    overview: "Our UI/UX design services focus on creating intuitive, engaging, and user-centered digital experiences. We combine creativity with user research to deliver designs that not only look great but also drive results.",
+    overview: "We design intuitive, user-centered digital experiences. Research and craftsmanship come together so products look polished and support business results.",
     items: [
       {
         title: "User Interface Design",
@@ -401,19 +457,18 @@ const servicesData = {
 
 export default function ServicePage() {
   const params = useParams();
-  const searchParams = useSearchParams();
   const category = params.category;
   const serviceData = servicesData[category];
-  const section = searchParams?.get('section');
 
   useEffect(() => {
-    if (section) {
-      const element = document.getElementById(section);
-      if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
-      }
+    const hash = window.location.hash.replace('#', '');
+    if (!hash) return;
+
+    const element = document.getElementById(hash);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
     }
-  }, [section]);
+  }, [category]);
 
   if (!serviceData) {
     return (
@@ -429,15 +484,13 @@ export default function ServicePage() {
 
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="mb-3">
-            <span className="block text-3xl sm:text-5xl md:text-6xl font-light text-gray-400" style={{ letterSpacing: '-0.02em' }}>
-              {serviceData.title}
-            </span>
-            <span className="block text-4xl sm:text-6xl md:text-7xl font-extrabold text-gray-900 mt-1" style={{ letterSpacing: '-0.03em' }}>
-              {serviceData.description}
-            </span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-gray-900 mb-4 tracking-tight">
+            {serviceData.title}
           </h1>
-          <p className="max-w-2xl text-base sm:text-lg text-gray-400 mb-8 mx-auto">
+          <p className="max-w-3xl text-xl sm:text-2xl font-medium text-gray-700 mb-4 mx-auto">
+            {serviceData.description}
+          </p>
+          <p className="max-w-2xl text-base sm:text-lg text-gray-500 mb-8 mx-auto">
             {serviceData.overview}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
@@ -445,10 +498,10 @@ export default function ServicePage() {
               href="/contact-us"
               className="px-8 py-3 rounded-lg font-semibold shadow transition bg-[#8958FE] hover:bg-[#7B4FE0] text-white text-base sm:text-lg"
             >
-              Contact Us
+              Talk to our team
             </a>
-            <a href="#" className="font-bold flex items-center gap-1 text-gray-900 hover:underline text-base sm:text-lg">
-              Case Studies <span className="text-lg">↗</span>
+            <a href="/case-studies" className="font-bold flex items-center gap-1 text-gray-900 hover:underline text-base sm:text-lg">
+              View case studies <span className="text-lg">↗</span>
             </a>
           </div>
         </div>

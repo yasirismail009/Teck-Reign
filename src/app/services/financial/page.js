@@ -145,7 +145,7 @@ export default function FinancialServicesPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            Expert financial communication and advisory services to support your capital markets activities
+            Financial communication and advisory support for capital markets activity
           </motion.p>
         </div>
 

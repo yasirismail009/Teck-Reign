@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa';
 
 export default function Footer() {
   return (
@@ -15,17 +15,14 @@ export default function Footer() {
               Empowering businesses with innovative technology solutions for a digital future.
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <FaFacebook size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <FaTwitter size={20} />
-              </a>
-              <a href="https://www.linkedin.com/company/tek-reign" rel="noopener noreferrer" target="_blank" className="text-gray-300 hover:text-white transition-colors">
+              <a
+                href="https://www.linkedin.com/company/tek-reign"
+                rel="noopener noreferrer"
+                target="_blank"
+                className="text-gray-300 hover:text-white transition-colors"
+                aria-label="TekReign on LinkedIn"
+              >
                 <FaLinkedin size={20} />
-              </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <FaInstagram size={20} />
               </a>
             </div>
           </div>

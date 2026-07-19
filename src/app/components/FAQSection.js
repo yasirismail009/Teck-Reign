@@ -2,53 +2,73 @@
 import React, { useState } from 'react';
 
 const faqs = [
+    {
+      question: 'What technologies does TekReign specialize in?',
+      answer:
+        'TekReign specializes in Agentic AI, machine learning (ML), large language models (LLMs), and modern AI solutions—plus cloud computing, blockchain, and web stacks such as React, Next.js, and Node.js. We also apply DevOps and microservices where they fit the product.',
+    },
   {
-    question: "What technologies does Tek Reign specialize in?",
-    answer: "Tek Reign specializes in cutting-edge technologies including AI/ML solutions, cloud computing, blockchain development, and modern web frameworks like React, Next.js, and Node.js. We also excel in DevOps practices and microservices architecture."
+    question: 'How does TekReign approach software development?',
+    answer:
+      'We use agile delivery with continuous integration and deployment (CI/CD), test-driven development (TDD), and code reviews. The goal is software that stays scalable, maintainable, and secure as your product grows.',
   },
   {
-    question: "How does Tek Reign approach software development?",
-    answer: "We follow agile methodologies and best practices in software development. Our approach includes continuous integration/continuous deployment (CI/CD), test-driven development (TDD), and code reviews. We prioritize scalable, maintainable, and secure code architecture."
+    question: 'What tech consulting services does TekReign offer?',
+    answer:
+      'Our consulting covers digital transformation strategy, cloud migration, cybersecurity assessments, and technology stack optimization—helping teams modernize infrastructure and ship stronger solutions.',
   },
   {
-    question: "What kind of tech consulting services does Tek Reign offer?",
-    answer: "We provide comprehensive tech consulting including digital transformation strategies, cloud migration, cybersecurity assessments, and technology stack optimization. Our team helps businesses modernize their infrastructure and implement cutting-edge solutions."
+    question: 'How does TekReign ensure code quality and security?',
+    answer:
+      'We use automated testing, linting, and security scanning, plus regular security reviews and penetration testing. Development follows OWASP-aligned practices to reduce risk before release.',
   },
   {
-    question: "How does Tek Reign ensure code quality and security?",
-    answer: "We maintain high code quality through automated testing, code linting, and security scanning. Our development process includes regular security audits, penetration testing, and adherence to OWASP security guidelines."
+    question: 'What cloud platforms does TekReign work with?',
+    answer:
+      'We work across AWS, Microsoft Azure, and Google Cloud Platform—covering architecture design, migration, optimization, and ongoing cloud infrastructure management.',
   },
   {
-    question: "What cloud platforms does Tek Reign work with?",
-    answer: "We are experts in major cloud platforms including AWS, Azure, and Google Cloud Platform. Our team can help with cloud architecture design, migration, optimization, and management of cloud infrastructure."
+    question: 'How does TekReign handle project scalability?',
+    answer:
+      'We plan for growth from day one with microservices where useful, Docker and Kubernetes containerization, load balancing, and auto-scaling so applications can handle higher demand.',
   },
   {
-    question: "How does Tek Reign handle project scalability?",
-    answer: "We design systems with scalability in mind from the start. This includes implementing microservices architecture, containerization with Docker and Kubernetes, load balancing, and auto-scaling solutions to ensure your application can handle growth."
+    question: "What is TekReign's approach to cybersecurity?",
+    answer:
+      'Security is built into delivery: secure coding, audits, penetration testing, industry-standard compliance practices, authentication and authorization, and team guidance where needed.',
   },
   {
-    question: "What is Tek Reign's approach to cybersecurity?",
-    answer: "We implement a comprehensive security strategy including secure coding practices, regular security audits, penetration testing, and compliance with industry standards. We also provide security training and implement robust authentication and authorization systems."
+    question: 'How does TekReign support mobile app development?',
+    answer:
+      'We build native and cross-platform apps with React Native, Flutter, and native iOS/Android. Typical capabilities include offline support, push notifications, and reliable backend integration.',
   },
-  {
-    question: "How does Tek Reign support mobile app development?",
-    answer: "We develop both native and cross-platform mobile applications using React Native, Flutter, and native iOS/Android development. Our mobile solutions include offline capabilities, push notifications, and seamless integration with backend services."
+    {
+      question: 'What AI and machine learning capabilities does TekReign offer?',
+      answer:
+        'We deliver Agentic AI systems, custom ML models, LLM and GenAI applications (including RAG), and modern AI solutions—from prototypes to production. Capabilities include NLP, computer vision, predictive analytics, recommendation systems, and AI product integration.',
+    },
+    {
+      question: 'What is KAMPALO?',
+      answer:
+        'KAMPALO is TekReign’s AI-based marketing platform. It includes Kai—a supervisor plus specialist mini-agents (LangGraph) for Google Ads, Meta, analytics, and search. Agents query synced DB stats, apply deterministic ROAS/CTR/CPC decision logic, and use LLMs (Ollama or Groq via LangChain) to synthesize answers. Tools are also exposed via MCP for chat and external clients.',
+    },
+    {
+      question: 'What is AuditQA?',
+      answer:
+        'AuditQA is TekReign’s AI-powered financial statement quality review system. It extracts .docx FS text, runs deterministic tools first (casting, notes, periods, presentation, and more), then uses an Ollama LLM for judgment checks. Modes include Quality Review (~32 findings) and Bilingual Cross-Check (7 findings). A feedback → dataset → adapter → golden-eval loop improves accuracy while shrinking prompts.',
+    },
+    {
+      question: 'How does TekReign handle data management and analytics?',
+    answer:
+      'We deliver data warehousing, ETL pipelines, real-time analytics, and business intelligence setups—plus data governance and custom dashboards so teams can act on reliable insights.',
   },
-  {
-    question: "What AI and machine learning capabilities does Tek Reign offer?",
-    answer: "We develop custom AI solutions including natural language processing, computer vision, predictive analytics, and recommendation systems. Our team can help implement machine learning models, neural networks, and integrate with existing AI services."
-  },
-  {
-    question: "How does Tek Reign handle data management and analytics?",
-    answer: "We implement robust data management solutions including data warehousing, ETL processes, real-time analytics, and business intelligence tools. Our team can help set up data pipelines, implement data governance, and create custom analytics dashboards."
-  }
 ];
 
 export default function FAQSection() {
   const [openIndices, setOpenIndices] = useState(new Set());
 
   const toggleFAQ = (index) => {
-    setOpenIndices(prev => {
+    setOpenIndices((prev) => {
       const newSet = new Set(prev);
       if (newSet.has(index)) {
         newSet.delete(index);
@@ -60,7 +80,7 @@ export default function FAQSection() {
   };
 
   return (
-    <section className="w-full py-16 mx-auto mt-20 mb-16 px-4" style={{background: 'transparent'}}>
+    <section className="w-full py-16 mx-auto mt-20 mb-16 px-4" style={{ background: 'transparent' }}>
       <h2 className="text-lg font-semibold mb-8 tracking-widest uppercase text-[#1A2341]">/TECH FAQ</h2>
       <div className="flex flex-col gap-4">
         {faqs.map((faq, idx) => (
@@ -81,4 +101,4 @@ export default function FAQSection() {
       </div>
     </section>
   );
-} 
+}

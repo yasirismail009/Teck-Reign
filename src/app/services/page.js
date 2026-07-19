@@ -5,8 +5,20 @@ import Link from 'next/link';
 
 const servicesData = [
   {
+    title: "AI Solutions",
+    description: "Agentic AI, ML, computer vision, and modern AI products—including KAMPALO, AuditQA, Hey Iris, and TerraSkyAI—built for production use.",
+    icon: "🤖",
+    link: "/services/software-development#agentic-ai",
+    features: [
+      "Agentic AI (Kai / LangGraph)",
+      "KAMPALO & AuditQA",
+      "Hey Iris AI Assistant",
+      "TerraSkyAI (ML / CV)",
+    ]
+  },
+  {
     title: "Software Development",
-    description: "Transform your ideas into powerful digital solutions with our comprehensive software development services.",
+    description: "Turn ideas into reliable web apps, mobile apps, custom software, and APIs built for real business use.",
     icon: "💻",
     link: "/services/software-development",
     features: [
@@ -18,7 +30,7 @@ const servicesData = [
   },
   {
     title: "Digital Marketing",
-    description: "Boost your online presence and drive growth with our data-driven digital marketing strategies.",
+    description: "Grow visibility with SEO, social, content, and PPC—supported by KAMPALO, our AI-based marketing platform.",
     icon: "📱",
     link: "/services/digital-marketing",
     features: [
@@ -30,7 +42,7 @@ const servicesData = [
   },
   {
     title: "Design & UX",
-    description: "Create exceptional user experiences with our comprehensive design services.",
+    description: "Design clear, conversion-focused interfaces—UI/UX, brand identity, websites, and mobile app experiences.",
     icon: "🎨",
     link: "/services/design-ux",
     features: [
@@ -48,14 +60,14 @@ export default function ServicesPage() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Our Services</h1>
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">AI, Software, Marketing & Design Services</h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Comprehensive digital solutions to help your business grow and succeed in the digital age.
+            Agentic AI, ML, LLMs, and modern AI solutions first—plus software, marketing, and design that ship in production.
           </p>
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {servicesData.map((service, index) => (
             <Link 
               key={index}
@@ -92,7 +104,7 @@ export default function ServicesPage() {
             href="/contact-us"
             className="inline-block px-8 py-4 bg-[#8958FE] text-white rounded-lg font-semibold hover:bg-[#7B4FE0] transition-colors duration-300"
           >
-            Get Started
+            Get a free project consultation
           </a>
         </div>
       </div>

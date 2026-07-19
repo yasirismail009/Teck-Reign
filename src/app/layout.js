@@ -15,9 +15,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "TekReign - Innovative Technology Solutions & Digital Transformation Experts",
-  description: "TekReign delivers cutting-edge technology solutions, custom software development, and digital transformation services. Expert in web development, mobile apps, cloud solutions, and enterprise software.",
-  keywords: "technology solutions, software development, digital transformation, web development, mobile apps, cloud solutions, enterprise software, IT consulting, custom software, tech innovation",
+  title: {
+    default: 'TekReign | Agentic AI, ML, LLMs & KAMPALO AI Marketing',
+    template: '%s | TekReign',
+  },
+  description:
+    'TekReign builds Agentic AI, ML, LLM, and modern AI solutions—plus KAMPALO, an AI-based marketing analytics platform—and custom software, cloud, and digital products.',
+  keywords:
+    'TekReign, Agentic AI, machine learning, ML, LLM, GenAI, modern AI solutions, KAMPALO, AI marketing platform, software development, digital transformation',
   authors: [{ name: 'TekReign' }],
   creator: 'TekReign',
   publisher: 'TekReign',
@@ -27,15 +32,8 @@ export const metadata = {
       { url: '/favicon.svg', type: 'image/svg+xml' },
       { url: '/favicon-96x96.png', sizes: '96x96', type: 'image/png' },
     ],
-    apple: [
-      { url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' },
-    ],
-    other: [
-      {
-        rel: 'mask-icon',
-        url: '/favicon.svg',
-      },
-    ],
+    apple: [{ url: '/apple-touch-icon.png', sizes: '180x180', type: 'image/png' }],
+    other: [{ rel: 'mask-icon', url: '/favicon.svg' }],
   },
   manifest: '/site.webmanifest',
   formatDetection: {
@@ -44,19 +42,17 @@ export const metadata = {
     telephone: false,
   },
   metadataBase: new URL('https://tekreign.com'),
-  alternates: {
-    canonical: '/',
-  },
   openGraph: {
-    title: 'TekReign - Innovative Technology Solutions & Digital Transformation Experts',
-    description: 'Transform your business with TekReign\'s cutting-edge technology solutions, custom software development, and digital transformation services.',
+    title: 'TekReign | Agentic AI, ML, LLMs & KAMPALO AI Marketing',
+    description:
+      'TekReign builds Agentic AI, ML, LLM, and modern AI solutions—plus KAMPALO, an AI-based marketing analytics platform—and custom software, cloud, and digital products.',
     url: 'https://tekreign.com',
     siteName: 'TekReign',
     images: [
       {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
+        url: '/web-app-manifest-512x512.png',
+        width: 512,
+        height: 512,
         alt: 'TekReign - Technology Solutions',
       },
     ],
@@ -65,9 +61,10 @@ export const metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'TekReign - Innovative Technology Solutions',
-    description: 'Transform your business with TekReign\'s cutting-edge technology solutions and digital transformation services.',
-    images: ['/twitter-image.jpg'],
+    title: 'TekReign | Agentic AI, ML, LLMs & KAMPALO AI Marketing',
+    description:
+      'TekReign builds Agentic AI, ML, LLM, and modern AI solutions—plus KAMPALO, an AI-based marketing analytics platform.',
+    images: ['/web-app-manifest-512x512.png'],
     creator: '@tekreign',
   },
   robots: {

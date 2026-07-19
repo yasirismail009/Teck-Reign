@@ -109,7 +109,7 @@ export default function DigitalServicesPage() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-xl text-gray-600 max-w-3xl mx-auto"
           >
-            Transform your digital presence with our comprehensive suite of digital marketing and technology solutions
+            Transform your online presence with digital marketing and technology services that support growth
           </motion.p>
         </div>
 

@@ -2,9 +2,29 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 
+const AI_PRODUCT_LINKS = {
+  KAMPALO: '/case-studies/32',
+  AuditQA: '/case-studies/33',
+  'Hey Iris': '/case-studies/28',
+  TerraSkyAI: '/case-studies/35',
+};
+
 const servicesData = [
   {
+    title: "AI Solutions",
+    slug: "software-development",
+    icon: "🤖",
+    items: [
+      "Agentic AI",
+      "KAMPALO",
+      "AuditQA",
+      "Hey Iris",
+      "TerraSkyAI",
+      "Modern AI Solutions",
+    ]
+  },  {
     title: "Software Development",
+    slug: "software-development",
     icon: "💻",
     items: [
       "Web Development",
@@ -19,6 +39,7 @@ const servicesData = [
   },
   {
     title: "Digital Marketing",
+    slug: "digital-marketing",
     icon: "📱",
     items: [
       "SEO Optimization",
@@ -32,7 +53,8 @@ const servicesData = [
     ]
   },
   {
-    title: "Design UX",
+    title: "Design & UX",
+    slug: "design-ux",
     icon: "🎨",
     items: [
       "UI/UX Design",
@@ -46,6 +68,11 @@ const servicesData = [
     ]
   }
 ];
+
+function serviceItemHref(colSlug, item) {
+  if (AI_PRODUCT_LINKS[item]) return AI_PRODUCT_LINKS[item];
+  return `/services/${colSlug}#${item.toLowerCase().replace(/\s+/g, '-')}`;
+}
 
 export default function Navbar() {
   const [showDropdown, setShowDropdown] = useState(false);
@@ -118,7 +145,7 @@ export default function Navbar() {
               <div className="w-0 h-0 border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-white mb-[-6px]" />
               <div 
                 ref={dropdownRef}
-                className="min-w-[600px] z-10 max-w-screen-md bg-white shadow-xl rounded-3xl border border-gray-100 flex p-8 gap-6 overflow-x-hidden"
+                className="min-w-[780px] z-10 max-w-screen-lg bg-white shadow-xl rounded-3xl border border-gray-100 flex p-8 gap-6 overflow-x-auto"
                 style={{ minHeight: '220px' }}
               >
                 {servicesData.map((col) => (
@@ -126,7 +153,7 @@ export default function Navbar() {
                     <div className="flex items-center gap-2 mb-2">
                       <span>{col.icon}</span>
                       <Link 
-                        href={`/services/${col.title.toLowerCase().replace(/\s+/g, '-')}`}
+                        href={`/services/${col.slug}`}
                         className="uppercase tracking-wide text-xs font-semibold text-[#7B819A] hover:text-[#8958FE] transition-colors"
                       >
                         {col.title}
@@ -137,7 +164,7 @@ export default function Navbar() {
                       {col.items.map(item => (
                         <Link
                           key={item}
-                          href={`/services/${col.title.toLowerCase().replace(/\s+/g, '-')}#${item.toLowerCase().replace(/\s+/g, '-')}`}
+                          href={serviceItemHref(col.slug, item)}
                           className="bg-[#F5F7FA] text-[#1A2341] rounded-lg px-4 py-2 text-sm font-medium shadow-sm whitespace-nowrap mb-2 hover:bg-[#E6E8F0] transition"
                         >
                           {item}
@@ -152,7 +179,7 @@ export default function Navbar() {
         </div>
         <Link href="/case-studies" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Case Studies</Link>
         <Link href="/about-us" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>About Us</Link>
-        <Link href="#" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Careers</Link>
+        <Link href="/careers" className="hover:underline transition-colors" style={{ color: "#1A2341" }}>Careers</Link>
         <Link href="/contact-us" className="ml-6 px-6 py-2 rounded-lg font-semibold shadow bg-[#8958FE] text-white hover:text-[#8958FE] hover:bg-[#E6E8F0] transition" style={{ boxShadow: '0 2px 8px rgba(80, 80, 120, 0.08)' }}>Contact Us</Link>
       </div>
 
@@ -234,7 +261,7 @@ export default function Navbar() {
                   About Us
                 </Link>
                 <Link 
-                  href="#" 
+                  href="/careers" 
                   className="text-[#1A2341] hover:text-[#8958FE] transition-colors py-2"
                   onClick={toggleMobileMenu}
                 >

@@ -2,8 +2,15 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata = {
-  title: '404 - Page Not Found | TekReign',
-  description: 'The page you are looking for could not be found. Return to TekReign homepage for innovative technology solutions.',
+  title: {
+    absolute: '404 - Page Not Found | TekReign',
+  },
+  description:
+    'The page you are looking for could not be found. Return to TekReign homepage for innovative technology solutions.',
+  robots: {
+    index: false,
+    follow: true,
+  },
 };
 
 export default function NotFound() {

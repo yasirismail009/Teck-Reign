@@ -5,24 +5,24 @@ const KAMPALO_URL = 'https://kampalo.com/';
 
 const highlights = [
   {
-    title: 'Unified dashboard',
+    title: 'Kai agentic stack',
     description:
-      'Campaign performance, spend, and conversions across channels in one operational view—no more tab switching.',
+      'Supervisor + specialist mini-agents (LangGraph): decode, run suite agents in parallel, then synthesize a clear answer.',
   },
   {
-    title: 'Google & Meta',
+    title: 'Suite specialists',
     description:
-      'Production integrations for Google Ads and Meta Ads with secure OAuth 2.0 and token refresh built in.',
+      'Dedicated agents for search, analytics, Google Ads, Meta Ads, and Meta insights—over synced campaign data.',
   },
   {
-    title: 'Analytics that matter',
+    title: 'Hybrid decisions',
     description:
-      'ROAS, ROI, CPA, CTR, CVR, and cross-platform comparison so teams can optimize with confidence.',
+      'Tools produce structured findings; a deterministic engine ranks ROAS/CTR/CPC winners; the LLM synthesizes mixed-domain answers.',
   },
   {
-    title: 'Built to scale',
+    title: 'MCP-ready tools',
     description:
-      'Multi-account support, real-time sync, and tiers from starter to enterprise—ready for growing marketing orgs.',
+      'The same namespaced suite tools power in-app chat and FastMCP for API or external agent clients.',
   },
 ];
 
@@ -43,7 +43,7 @@ export default function KampaloSection() {
         <div className="flex flex-col lg:flex-row lg:items-stretch gap-10 lg:gap-14">
           <div className="flex-1 flex flex-col justify-center">
             <p className="text-xs font-semibold tracking-[0.2em] uppercase text-[#8958FE] mb-4">
-              Flagship product
+              Flagship AI product
             </p>
             <h2
               id="kampalo-heading"
@@ -55,11 +55,10 @@ export default function KampaloSection() {
               KAMPALO
             </h2>
             <p className="text-slate-600 text-base sm:text-lg leading-relaxed max-w-xl mb-8">
-              Unified marketing analytics and campaign management for modern teams. Connect, monitor, and optimize
-              advertising across{' '}
-              <span className="text-[#0A1531] font-medium">Google Ads</span>,{' '}
-              <span className="text-[#0A1531] font-medium">Meta</span>, and more—from a single, production-ready
-              platform engineered by TekReign.
+              An <span className="text-[#0A1531] font-medium">AI-based marketing platform</span> powered by{' '}
+              <span className="text-[#0A1531] font-medium">Kai</span>—a supervisor and specialist mini-agents stack
+              for Google Ads, Meta, analytics, and search. Chat over synced data with hybrid ROAS/CTR/CPC decisions
+              and LLM synthesis, engineered by TekReign.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
               <a
@@ -94,8 +93,8 @@ export default function KampaloSection() {
             <div className="h-full rounded-3xl border border-slate-200/80 bg-white/90 backdrop-blur-sm shadow-xl shadow-slate-200/50 p-6 sm:p-8 flex flex-col">
               <div className="flex items-center justify-between gap-4 pb-6 border-b border-slate-100 mb-6">
                 <div>
-                  <p className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">Product</p>
-                  <p className="text-lg font-semibold text-[#0A1531]">KAMPALO dashboard</p>
+                  <p className="text-[10px] font-semibold uppercase tracking-widest text-slate-400">Agentic AI</p>
+                  <p className="text-lg font-semibold text-[#0A1531]">Kai · supervisor + suites</p>
                 </div>
                 <span className="shrink-0 text-xs font-semibold uppercase tracking-wide text-emerald-700 bg-emerald-50 border border-emerald-200/80 px-3 py-1 rounded-full">
                   Production

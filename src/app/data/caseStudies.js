@@ -1,4 +1,4 @@
-export const caseStudies = [
+const caseStudiesData = [
   {
     id: 1,
     title: "Precision Agriculture Application Utilizing Satellite Imagery",
@@ -803,7 +803,8 @@ export const caseStudies = [
   {
     id: 28,
     title: "Hey Iris AI Assistant",
-    description: "Building an intelligent virtual assistant for enhanced productivity",
+    description:
+      "Intelligent AI assistant (heyiris.ai) for productivity—natural language tasks, scheduling, and contextual information management",
     image: "/case-studies/hey-iris/Questions 1.png",
     detail_images: [
       "/case-studies/hey-iris/Questions 1.png",
@@ -821,23 +822,28 @@ export const caseStudies = [
       "/case-studies/hey-iris/Questions 6.png",
       "/case-studies/hey-iris/Questions 7.png",
     ],
-    category: "AI & Machine Learning",
+    category: "AI Assistant",
     client: "Iris Technologies",
     duration: "14 months",
     live_link: "https://www.heyiris.ai/",
     results: ["95% Task Automation", "60% Faster Response", "24/7 Availability"],
     content: {
-      overview: "Iris Technologies wanted to create an advanced AI assistant to help users with daily tasks, scheduling, and information management. The assistant needed to understand natural language and provide contextual responses.",
-      challenge: "The project faced several challenges:\n\n• Complex natural language processing\n• Context awareness requirements\n• Multi-platform integration needs\n• Real-time response requirements\n• Data privacy concerns",
-      solution: "We developed an intelligent assistant platform:\n\n• Advanced NLP capabilities\n• Context-aware responses\n• Multi-platform support\n• Secure data handling\n• Custom skill development\n• Voice recognition integration",
-      results: "The implementation achieved remarkable results:\n\n• 95% of routine tasks automated\n• 60% faster query resolution\n• 24/7 available assistance\n• 90% accuracy in natural language understanding\n• Enhanced user productivity\n• Positive user feedback",
+      overview:
+        "Hey Iris (IRIS AI) is an intelligent virtual assistant built for Iris Technologies at heyiris.ai. It helps users with daily tasks, scheduling, and information management using natural language understanding and contextual responses across platforms.",
+      challenge:
+        "The project needed strong natural language understanding, context awareness across sessions, multi-platform delivery, real-time responses, and careful data privacy—without feeling like a generic chatbot.",
+      solution:
+        "We delivered the Hey Iris AI assistant platform:\n\n• Advanced NLP for everyday productivity queries\n• Context-aware responses for ongoing conversations\n• Multi-platform support (including mobile)\n• Secure data handling and privacy controls\n• Custom skill / capability development\n• Voice recognition integration where needed",
+      results:
+        "Hey Iris improved how users get work done:\n\n• 95% of routine tasks automated\n• 60% faster query resolution\n• 24/7 available assistance\n• High accuracy in natural language understanding\n• Stronger day-to-day productivity for end users\n• Positive product feedback from Iris Technologies",
       technologies: ["Python", "TensorFlow", "NLP", "AWS", "React Native", "MongoDB"],
       testimonial: {
-        quote: "Hey Iris has transformed how our users handle daily tasks. The AI assistant's capabilities have exceeded our expectations.",
+        quote:
+          "Hey Iris has transformed how our users handle daily tasks. The AI assistant's capabilities have exceeded our expectations.",
         author: "Jennifer Lee",
-        position: "Product Manager, Iris Technologies"
-      }
-    }
+        position: "Product Manager, Iris Technologies",
+      },
+    },
   },
   {
     id: 29,
@@ -930,5 +936,215 @@ export const caseStudies = [
         position: "Operations Manager, Project Solutions Inc"
       }
     }
-  }
+  },
+  {
+    id: 32,
+    title: "KAMPALO — Agentic AI Marketing Platform (Kai)",
+    description:
+      "AI marketing analytics with Kai—a supervisor plus specialist mini-agents stack for Google Ads, Meta, search, and cross-channel insights",
+    image: "/case-studies/kampalo/kampalo (1).png",
+    detail_images: [
+      "/case-studies/kampalo/kampalo (1).png",
+      "/case-studies/kampalo/kampalo (2).png",
+      "/case-studies/kampalo/kampalo (3).png",
+      "/case-studies/kampalo/kampalo (4).png",
+      "/case-studies/kampalo/kampalo (5).png",
+      "/case-studies/kampalo/kampalo (6).png",
+    ],
+    live_link: "https://kampalo.com/",
+    category: "AI Marketing Technology",
+    client: "TekReign Product",
+    duration: "Ongoing product",
+    results: ["Agentic Kai Chat", "Hybrid ROAS Decisions", "Google & Meta Suites"],
+    content: {
+      overview:
+        "KAMPALO is TekReign’s AI-based marketing platform. At its core is Kai—an agentic supervisor plus specialist mini-agents stack that answers marketing questions over synced campaign data. Teams get unified analytics for Google Ads and Meta, plus conversational AI that runs tools, applies deterministic ROAS/CTR/CPC decision logic, and synthesizes clear answers.",
+      challenge:
+        "Marketers juggle multiple ad platforms and reporting tools. Generic chatbots invent metrics; raw dashboards don’t explain winners. Teams needed an AI that could query synced stats safely, specialize by domain (ads, analytics, search), and combine rule-based decisions with LLM narrative—not live ad-API calls inside every chat turn.",
+      solution:
+        "We shipped KAMPALO with Kai’s production agent stack:\n\n• Supervisor + specialist mini-agents (LangGraph): decode → parallel suite agents → synthesize\n• Suites: search_engine, analytics, google_ads, meta_ads, meta_insights\n• Agents use DB-only tools on synced stats (no live Google/Meta calls in chat)\n• Hybrid pipeline: tools → structured findings → deterministic decision engine (ROAS/CTR/CPC winners); LLM synthesizes mixed-domain answers\n• Curriculum maps known Kai prompts before the supervisor so smaller local models stay in-scope\n• LLM providers via AILLMService → LangChain ChatOpenAI: Ollama (default, e.g. qwen3.6) or optional Groq\n• MCP (FastMCP) exposes the same namespaced suite tools in-process and over HTTP for external clients\n• Product surfaces: agent query/chat (HTTP + SSE streaming), WebSocket chat, conversation history in Postgres, plus rule-based trends/compare/insights analytics",
+      results:
+        "KAMPALO gives marketing teams an agentic operating layer on top of synced data:\n\n• Ask Kai in chat and get suite-specialized analysis across Google and Meta\n• Faster “what’s winning?” answers grounded in tools + deterministic ROAS/CTR/CPC logic\n• Safer chats that read synced DB stats instead of hammering live ad APIs\n• Extensible tools via MCP for API and external agent clients\n• Live product at kampalo.com with streaming and conversation history",
+      technologies: [
+        "LangGraph",
+        "LangChain",
+        "Kai (supervisor + mini-agents)",
+        "Ollama / Groq LLMs",
+        "FastMCP / MCP",
+        "PostgreSQL",
+        "SSE + WebSocket chat",
+        "Google Ads & Meta (synced)",
+        "Decision engine (ROAS/CTR/CPC)",
+      ],
+      testimonial: {
+        quote:
+          "Kai’s supervisor and suite agents turn synced ad data into clear winners—tools and ROAS logic first, then a clean AI summary when we need the full picture.",
+        author: "Marketing Operations Lead",
+        position: "KAMPALO user",
+      },
+    },
+  },
+  {
+    id: 33,
+    title: "AuditQA — AI Financial Statement Quality Review",
+    description:
+      "AI-powered FS quality review: deterministic audit tools plus Ollama LLM judgment, bilingual cross-check, and a feedback-to-adapter learning loop",
+    image: "/case-studies/audit_qa_ai/audit_qa (7).png",
+    detail_images: [
+      "/case-studies/audit_qa_ai/audit_qa (7).png",
+      "/case-studies/audit_qa_ai/audit_qa (1).png",
+      "/case-studies/audit_qa_ai/audit_qa (2).png",
+      "/case-studies/audit_qa_ai/audit_qa (3).png",
+      "/case-studies/audit_qa_ai/audit_qa (4).png",
+      "/case-studies/audit_qa_ai/audit_qa (5).png",
+    ],
+    category: "AI Financial Audit & QA",
+    client: "TekReign Product",
+    duration: "Ongoing product",
+    results: ["~32 Checklist Findings", "Bilingual FS Cross-Check", "Tools Override LLM"],
+    content: {
+      overview:
+        "AuditQA is an AI-powered financial statement quality review system from TekReign. It extracts text from uploaded .docx statements, runs deterministic audit tools first, then uses an Ollama LLM (auditqa-auditor persona) for judgment checks—returning structured findings. Learning is designed so accuracy goes up while prompt size goes down.",
+      challenge:
+        "Financial statement QA is slow when every casting, note, period, and presentation check is manual. Growing prompt libraries with new rules made models harder to control. Teams needed arithmetic and structure checks that are deterministic, LLM judgment only where it belongs, and a learning path that improves quality without bloating prompts.",
+      solution:
+        "We built AuditQA as a hybrid audit agent:\n\n• Pipeline: upload → extract text (python-docx) → tools-first agent → LLM judgment → sanitize/score → store findings\n• Quality Review mode: ~32 checklist findings (casting, notes, periods, presentation, and more)\n• Bilingual Cross-Check mode: 7 findings comparing two language versions of the FS\n• Inference: Ollama (default llama3.2) with auditqa-auditor Modelfile persona; tools run first, LLM only on judgment checks\n• Minimal system prompt (identity + JSON contract + check names); deterministic tools for cast, note cross-ref, period, comparative/interim, spelling, presentation\n• Post-processing: JSON repair, sanitize, scoring, narrative/executive summary\n• Tool results override the LLM for the same check name\n• Learning loop: AgentEpisode logging → human labels (confirmed, false_positive, missed_issue, …) → JSONL export → golden eval → optional LoRA adapter with deploy gate (score ≥ baseline) → continuous run_learning_cycle\n• Supporting surfaces: auditor chat (scoped Q&A), compact knowledge retrieval, learning dashboard (FP/miss trends, tokens, eval metrics)",
+      results:
+        "AuditQA delivers production FS review with a clear AI/ML principle—shrink prompts, grow tools and adapters:\n\n• Structured Quality Review and Bilingual Cross-Check outputs auditors can act on\n• Deterministic tools own arithmetic/structure; LLM owns judgment only\n• Same-check tool results win over the model when they conflict\n• Feedback → dataset → adapter → golden eval gate before shipping improvements\n• Phases 0–4 complete: episode logging, golden eval, tools-first agent, adapter path, continuous learning + dashboard (runtime MD injection removed from inference)",
+      technologies: [
+        "Ollama (llama3.2)",
+        "auditqa-auditor persona",
+        "python-docx",
+        "Deterministic audit tools",
+        "Tools-first agent loop",
+        "Minimal prompts",
+        "AgentEpisode + JSONL export",
+        "Golden eval / LoRA adapters",
+        "Auditor chat & learning dashboard",
+      ],
+      testimonial: {
+        quote:
+          "AuditQA’s tools-first design is the difference—casting and structure are deterministic, the LLM judges the rest, and feedback shrinks the prompt instead of growing it.",
+        author: "Financial Statement QA Lead",
+        position: "AuditQA user",
+      },
+    },
+  },
+  {
+    id: 34,
+    title: "AI Financial Analysis & Insights Platform",
+    description:
+      "Financial analysis platform using AI and LLMs to turn statements, ledgers, and KPIs into actionable insights",
+    image: "/case-studies/financial_analysis_ai/financial (4).png",
+    detail_images: [
+      "/case-studies/financial_analysis_ai/financial (4).png",
+      "/case-studies/financial_analysis_ai/financial (1).png",
+      "/case-studies/financial_analysis_ai/financial (2).png",
+      "/case-studies/financial_analysis_ai/financial (3).png",
+      "/case-studies/financial_analysis_ai/financial (5).png",
+      "/case-studies/financial_analysis_ai/financial (6).png",
+      "/case-studies/financial_analysis_ai/financial (7).png",
+      "/case-studies/financial_analysis_ai/financial (8).png",
+      "/case-studies/financial_analysis_ai/financial (9).png",
+      "/case-studies/financial_analysis_ai/financial (10).png",
+      "/case-studies/financial_analysis_ai/financial (11).png",
+      "/case-studies/financial_analysis_ai/financial (12).png",
+      "/case-studies/financial_analysis_ai/financial (13).png",
+      "/case-studies/financial_analysis_ai/financial (14).png",
+      "/case-studies/financial_analysis_ai/financial (15).png",
+      "/case-studies/financial_analysis_ai/financial (16).png",
+      "/case-studies/financial_analysis_ai/financial (17).png",
+      "/case-studies/financial_analysis_ai/financial (18).png",
+      "/case-studies/financial_analysis_ai/financial (19).png",
+      "/case-studies/financial_analysis_ai/financial (20).png",
+      "/case-studies/financial_analysis_ai/financial (21).png",
+      "/case-studies/financial_analysis_ai/financial (22).png",
+      "/case-studies/financial_analysis_ai/financial (23).png",
+      "/case-studies/financial_analysis_ai/financial (24).png",
+      "/case-studies/financial_analysis_ai/financial (25).png",
+      "/case-studies/financial_analysis_ai/financial (26).png",
+      "/case-studies/financial_analysis_ai/financial (27).png",
+      "/case-studies/financial_analysis_ai/financial (28).png",
+      "/case-studies/financial_analysis_ai/financial (29).png",
+      "/case-studies/financial_analysis_ai/financial (30).png",
+    ],
+    category: "AI Financial Technology",
+    client: "Finance & Analytics Team",
+    duration: "7 months",
+    results: ["Faster Financial Reviews", "AI Narrative Insights", "Clearer KPI Visibility"],
+    content: {
+      overview:
+        "Developed an AI financial analysis platform that helps finance teams analyze statements, ledgers, and operational KPIs. LLMs generate clear narratives and variance explanations while models and rules surface trends, anomalies, and decision-ready summaries for leadership.",
+      challenge:
+        "Finance stakeholders spent too long assembling reports from multiple systems. Variance explanations were manual, anomaly detection was late, and non-finance leaders struggled to get plain-language insight from dense spreadsheets.",
+      solution:
+        "We built an AI-assisted financial analysis workspace:\n\n• Ingestion of financial statements, ledgers, and KPI feeds\n• Automated ratio, trend, and variance analysis\n• LLM-generated narratives for board and management packs\n• Anomaly and outlier detection on key accounts\n• Scenario and what-if summary support\n• Exportable insight reports for stakeholders",
+      results:
+        "Finance teams gained speed and clarity:\n\n• Shorter monthly and quarterly review cycles\n• Plain-language AI narratives on top of real numbers\n• Earlier visibility into anomalies and drivers\n• Better alignment between finance and business leaders\n• Repeatable analysis workflows instead of one-off spreadsheets",
+      technologies: [
+        "LLMs",
+        "Machine Learning",
+        "Python",
+        "Next.js",
+        "Node.js",
+        "PostgreSQL",
+        "Data Pipelines",
+        "Cloud Infrastructure",
+      ],
+      testimonial: {
+        quote:
+          "AI financial narratives and anomaly detection turned our month-end from a scramble into a structured insight review.",
+        author: "Finance Director",
+        position: "Finance & Analytics Team",
+      },
+    },
+  },
+  {
+    id: 35,
+    title: "TerraSkyAI — ML & Computer Vision for Precision Agriculture",
+    description:
+      "Machine learning and computer vision on drone imagery—off-type and weed detection, plant stand counts, and yield estimation for seed and crop companies",
+    image: null, // after adding cover: "/case-studies/terraskyai/terraskyai (1).png"
+    detail_images: [],
+    live_link: "https://www.terraskyai.com/",
+    category: "ML & Computer Vision",
+    client: "TerraSkyAI",
+    duration: "Ongoing product",
+    results: ["Computer Vision Detection", "ML Stand Count & Yield", "Field Map Insights"],
+    content: {
+      overview:
+        "TerraSkyAI is an ML and computer vision platform for precision agriculture. Seed and crop companies fly drones over fields; models detect off-types and weeds, run plant stand counts, and estimate yield—so teams don’t walk every row by hand. Aerial images become map pins, QC-reviewed findings, and agronomy-ready reports. Live at terraskyai.com.",
+      challenge:
+        "Manual field scouting doesn’t scale. The hard problem was computer vision and ML on real drone imagery: reliable plant-level detection across growth stages and crops, counts and yield signals from photos, geospatial placement of every finding, and a human QC loop before anything goes back to the field.",
+      solution:
+        "We delivered TerraSkyAI as an ML / computer vision product with a full field-ops portal:\n\n• Core CV/ML pipeline on uploaded drone photos—object detection and analytics per crop and growth stage\n• Canola vision models: off-type / volunteer (VC) detection, early prescout, weed detection, plant stand count, yield estimation, male vs female bay areas\n• Potato: off-type detection, weeds (where allowed), plant count + yield together\n• Corn: plant count + yield; early prescout checks\n• Farms & fields on a map with flight history; flights record altitude/drone, photo upload, and analysis jobs\n• Results on the map—CV pins with crop photos; “clean” GPS images for coverage; reports and field stats\n• QC workflow—confirm, reject, or correct model detections before export/share for field follow-up\n• Pilots, alerts, cloud storage, roles/SSO, and day-to-day ops tools around the vision stack",
+      results:
+        "Production ML and computer vision for AgTech at scale:\n\n• Drone imagery → detections, counts, and yield estimates without walking every row\n• Crop-specific CV models for canola, potato, and corn use cases\n• Map-grounded findings agronomists can trust after QC\n• Faster scouting and clearer follow-up points for seed/crop operations\n• Live platform: https://www.terraskyai.com/",
+      technologies: [
+        "Computer Vision",
+        "Machine Learning",
+        "Object Detection",
+        "Drone Imagery Pipelines",
+        "Python",
+        "Geospatial / Maps",
+        "Cloud Storage",
+        "Web Portal (SkySight)",
+        "Model QC Workflows",
+      ],
+      testimonial: {
+        quote:
+          "TerraSkyAI’s computer vision and ML turn our drone flights into plant-level detections, stand counts, and yield signals—practical AI we can QC and take to the field.",
+        author: "Agronomy Operations",
+        position: "TerraSkyAI",
+      },
+    },
+  },
+];
+
+/** AI product case studies listed first. */
+const AI_SOLUTION_IDS = [32, 33, 35, 28, 34];
+
+export const caseStudies = [
+  ...AI_SOLUTION_IDS.map((id) => caseStudiesData.find((study) => study.id === id)).filter(Boolean),
+  ...caseStudiesData.filter((study) => !AI_SOLUTION_IDS.includes(study.id)),
 ];

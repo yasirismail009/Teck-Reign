@@ -78,8 +78,8 @@ export default function ContactUsPage() {
         {/* Left: Form Section */}
         <div className="flex-1 flex flex-col justify-center min-w-0 md:min-w-[370px] px-6 md:px-14 py-8 md:py-12">
           <div className="flex flex-col justify-center h-full">
-            <h1 className="text-2xl md:text-3xl font-bold mb-2 leading-tight text-[#18181B]">Let&apos;s Work Together</h1>
-            <p className="text-[#44444A] mb-6 md:mb-7 text-sm md:text-base leading-relaxed font-normal">We deliver comprehensive solutions, particularly excelling in financial communications and strategic public relations.</p>
+            <h1 className="text-2xl md:text-3xl font-bold mb-2 leading-tight text-[#18181B]">Contact TekReign</h1>
+            <p className="text-[#44444A] mb-6 md:mb-7 text-sm md:text-base leading-relaxed font-normal">Tell us what you need. We deliver complete solutions, with particular strength in financial communications and strategic public relations.</p>
             <div className="mb-6 md:mb-7">
               <div className="text-sm font-medium mb-3 text-[#18181B]">What do you need help with?</div>
               <div className="flex flex-col sm:flex-row gap-3 md:gap-4">
