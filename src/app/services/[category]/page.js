@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect } from 'react';
 import { useParams } from 'next/navigation';
+import Link from 'next/link';
 
 const servicesData = {
   'software-development': {
@@ -494,15 +495,15 @@ export default function ServicePage() {
             {serviceData.overview}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 items-center justify-center">
-            <a
+            <Link
               href="/contact-us"
               className="px-8 py-3 rounded-lg font-semibold shadow transition bg-[#8958FE] hover:bg-[#7B4FE0] text-white text-base sm:text-lg"
             >
               Talk to our team
-            </a>
-            <a href="/case-studies" className="font-bold flex items-center gap-1 text-gray-900 hover:underline text-base sm:text-lg">
+            </Link>
+            <Link href="/case-studies" className="font-bold flex items-center gap-1 text-gray-900 hover:underline text-base sm:text-lg">
               View case studies <span className="text-lg">↗</span>
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -556,12 +557,12 @@ export default function ServicePage() {
           <div className="bg-[#8958FE] text-white rounded-lg p-8 shadow-lg max-w-3xl mx-auto">
             <h2 className="text-2xl font-bold mb-4">Ready to Get Started?</h2>
             <p className="mb-6">Let&apos;s discuss how our {serviceData.title.toLowerCase()} services can help achieve your goals.</p>
-            <a
+            <Link
               href="/contact-us"
               className="inline-block bg-white text-[#8958FE] px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-300"
             >
               Contact Us
-            </a>
+            </Link>
           </div>
         </div>
       </div>
